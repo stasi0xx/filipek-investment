@@ -30,16 +30,11 @@ export default function About() {
   return (
     <section
       id="about"
+      className="about-section"
       style={{ padding: "160px 48px", background: "var(--surface-canvas)" }}
     >
       <div style={{ maxWidth: 1440, margin: "0 auto" }}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 48,
-          }}
-        >
+        <div className="about-grid">
           {pillars.map((p, i) => (
             <Reveal key={i} delay={i * 0.12}>
               <article

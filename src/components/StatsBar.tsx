@@ -1,69 +1,127 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Reveal from "./Reveal";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
   { number: "122", unit: "m²", label: "powierzchni domu" },
   { number: "590", unit: "m²", label: "powierzchni działki" },
-  { number: "3",   unit: "",   label: "sypialnie" },
-  { number: "1",   unit: "km", label: "od Białej Podlaskiej" },
+  { number: "3", unit: "", label: "sypialnie" },
+  { number: "1", unit: "km", label: "od Białej Podlaskiej" },
 ];
 
 export default function StatsBar() {
+  const barRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const bar = barRef.current;
+    if (!bar || window.innerWidth > 768) return;
+
+    bar.style.scrollSnapType = "none";
+
+    const ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: bar,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1,
+        onUpdate: (self) => {
+          bar.scrollLeft = self.progress * (bar.scrollWidth - bar.clientWidth);
+        },
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div
-      style={{
-        background: "var(--surface-ink)",
-        padding: "40px 48px",
-        display: "grid",
-        gridTemplateColumns: "repeat(4, 1fr)",
-      }}
-    >
-      {stats.map((s, i) => (
-        <Reveal key={s.label} delay={i * 0.08}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 6,
-              padding: "0 40px",
-              borderRight:
-                i < stats.length - 1
-                  ? "1px solid var(--line-dark)"
-                  : "none",
-            }}
-          >
-            <span
+    <>
+      <style>{`
+        .stats-bar {
+          background: var(--surface-ink);
+          padding: 40px 48px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+        }
+        .stats-item {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          padding: 0 40px;
+        }
+        @media (max-width: 768px) {
+          .stats-bar {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 36px 0;
+            scrollbar-width: none;
+          }
+          .stats-bar::-webkit-scrollbar {
+            display: none;
+          }
+          .stats-item {
+            flex: 0 0 72vw;
+            scroll-snap-align: start;
+            padding: 0 32px;
+          }
+          .stats-item:first-child {
+            padding-left: 28px;
+          }
+          .stats-item:last-child {
+            padding-right: 28px;
+          }
+        }
+      `}</style>
+      <div className="stats-bar" ref={barRef}>
+        {stats.map((s, i) => (
+          <Reveal key={s.label} delay={i * 0.08}>
+            <div
+              className="stats-item"
               style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "2.5rem",
-                fontWeight: 400,
-                color: "var(--brand-sand)",
-                lineHeight: 1,
+                borderRight:
+                  i < stats.length - 1
+                    ? "1px solid var(--line-dark)"
+                    : "none",
               }}
             >
-              {s.number}
-              {s.unit && (
-                <span style={{ fontSize: "1.1rem", marginLeft: 3 }}>
-                  {s.unit}
-                </span>
-              )}
-            </span>
-            <span
-              style={{
-                fontFamily: "var(--font-sans)",
-                fontSize: "0.68rem",
-                letterSpacing: "0.14em",
-                textTransform: "uppercase",
-                color: "var(--ink-inverse-secondary)",
-                fontWeight: 500,
-              }}
-            >
-              {s.label}
-            </span>
-          </div>
-        </Reveal>
-      ))}
-    </div>
+              <span
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  fontSize: "2.5rem",
+                  fontWeight: 400,
+                  color: "var(--brand-sand)",
+                  lineHeight: 1,
+                }}
+              >
+                {s.number}
+                {s.unit && (
+                  <span style={{ fontSize: "1.1rem", marginLeft: 3 }}>
+                    {s.unit}
+                  </span>
+                )}
+              </span>
+              <span
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  fontSize: "0.68rem",
+                  letterSpacing: "0.14em",
+                  textTransform: "uppercase",
+                  color: "var(--ink-inverse-secondary)",
+                  fontWeight: 500,
+                }}
+              >
+                {s.label}
+              </span>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </>
   );
 }

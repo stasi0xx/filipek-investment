@@ -16,18 +16,25 @@ export default function Dom() {
   return (
     <section
       id="dom"
-      style={{ padding: "160px 48px", background: "var(--surface-warm)" }}
+      style={{ padding: "clamp(60px, 10vw, 160px) clamp(24px, 6vw, 48px)", background: "var(--surface-warm)" }}
     >
-      <div
-        style={{
-          maxWidth: 1440,
-          margin: "0 auto",
-          display: "grid",
-          gridTemplateColumns: "1.1fr 1fr",
-          gap: 96,
-          alignItems: "center",
-        }}
-      >
+      <style>{`
+        .dom-inner {
+          max-width: 1440px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1.1fr 1fr;
+          gap: 96px;
+          align-items: center;
+        }
+        @media (max-width: 768px) {
+          .dom-inner {
+            grid-template-columns: 1fr;
+            gap: 48px;
+          }
+        }
+      `}</style>
+      <div className="dom-inner">
         {/* Copy */}
         <div>
           <Reveal>

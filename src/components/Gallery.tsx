@@ -27,6 +27,16 @@ export default function Gallery() {
     <section
       style={{ padding: "160px 0", background: "var(--surface-canvas)", color: "var(--ink-primary)" }}
     >
+      <style>{`
+        .gallery-desktop { display: contents; }
+        .gallery-mobile { display: none; }
+        @media (max-width: 767px) {
+          .gallery-desktop { display: none; }
+          .gallery-mobile { display: flex; flex-direction: column; gap: 4px; padding: 0 4px; }
+          .gallery-mobile-img { width: 100%; aspect-ratio: 4/3; overflow: hidden; }
+        }
+      `}</style>
+
       <div style={{ padding: "0 48px", maxWidth: 1440, margin: "0 auto 64px" }}>
         <Reveal>
           <div
@@ -59,52 +69,70 @@ export default function Gallery() {
         </Reveal>
       </div>
 
-      <Reveal delay={0.15}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "2fr 1fr",
-            gap: 4,
-            padding: "0 4px",
-          }}
-        >
+      {/* Desktop layout */}
+      <div className="gallery-desktop">
+        <Reveal delay={0.15}>
           <div
-            style={{ aspectRatio: "16/10", overflow: "hidden" }}
-            onMouseEnter={() => setHovered(0)}
-            onMouseLeave={() => setHovered(null)}
+            style={{
+              display: "grid",
+              gridTemplateColumns: "2fr 1fr",
+              gap: 4,
+              padding: "0 4px",
+            }}
           >
-            <div style={imgStyle(imgs[0], hovered === 0)} />
-          </div>
-          <div style={{ display: "grid", gridTemplateRows: "1fr 1fr", gap: 4 }}>
             <div
-              style={{ overflow: "hidden" }}
-              onMouseEnter={() => setHovered(1)}
+              style={{ aspectRatio: "16/10", overflow: "hidden" }}
+              onMouseEnter={() => setHovered(0)}
               onMouseLeave={() => setHovered(null)}
             >
-              <div style={imgStyle(imgs[1], hovered === 1)} />
+              <div style={imgStyle(imgs[0], hovered === 0)} />
             </div>
-            <div
-              style={{ overflow: "hidden" }}
-              onMouseEnter={() => setHovered(2)}
-              onMouseLeave={() => setHovered(null)}
-            >
-              <div style={imgStyle(imgs[2], hovered === 2)} />
+            <div style={{ display: "grid", gridTemplateRows: "1fr 1fr", gap: 4 }}>
+              <div
+                style={{ overflow: "hidden" }}
+                onMouseEnter={() => setHovered(1)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                <div style={imgStyle(imgs[1], hovered === 1)} />
+              </div>
+              <div
+                style={{ overflow: "hidden" }}
+                onMouseEnter={() => setHovered(2)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                <div style={imgStyle(imgs[2], hovered === 2)} />
+              </div>
             </div>
           </div>
-        </div>
-      </Reveal>
+        </Reveal>
 
-      <Reveal delay={0.2}>
-        <div style={{ padding: "0 4px", marginTop: 4 }}>
-          <div
-            style={{ aspectRatio: "21/9", overflow: "hidden" }}
-            onMouseEnter={() => setHovered(3)}
-            onMouseLeave={() => setHovered(null)}
-          >
-            <div style={imgStyle(imgs[3], hovered === 3)} />
+        <Reveal delay={0.2}>
+          <div style={{ padding: "0 4px", marginTop: 4 }}>
+            <div
+              style={{ aspectRatio: "21/9", overflow: "hidden" }}
+              onMouseEnter={() => setHovered(3)}
+              onMouseLeave={() => setHovered(null)}
+            >
+              <div style={imgStyle(imgs[3], hovered === 3)} />
+            </div>
           </div>
-        </div>
-      </Reveal>
+        </Reveal>
+      </div>
+
+      {/* Mobile layout – each image stacked with individual reveal */}
+      <div className="gallery-mobile">
+        {imgs.map((src, i) => (
+          <Reveal key={src} delay={i * 0.12}>
+            <div
+              className="gallery-mobile-img"
+              onMouseEnter={() => setHovered(i)}
+              onMouseLeave={() => setHovered(null)}
+            >
+              <div style={imgStyle(src, hovered === i)} />
+            </div>
+          </Reveal>
+        ))}
+      </div>
     </section>
   );
 }

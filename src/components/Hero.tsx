@@ -53,19 +53,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div
-        style={{
-          position: "absolute",
-          left: 48,
-          right: 48,
-          bottom: 80,
-          color: "var(--ink-inverse)",
-          display: "flex",
-          flexDirection: "column",
-          gap: 28,
-          maxWidth: 1200,
-        }}
-      >
+      <div className="hero-content">
         <div
           style={{
             fontFamily: "var(--font-sans)",
@@ -111,14 +99,7 @@ export default function Hero() {
           Dom to więcej niż adres.<br />To początek historii.
         </p>
 
-        <div
-          style={{
-            display: "flex",
-            gap: 12,
-            marginTop: 8,
-            animation: "heroFadeUp 0.9s var(--ease-out-quart) 0.65s both",
-          }}
-        >
+        <div className="hero-buttons">
           <Button as="a" href="#about" variant="primary-inverse">
             Poznaj dom
           </Button>
@@ -131,22 +112,7 @@ export default function Hero() {
       <ScrollArrow />
 
       {/* Vertical label */}
-      <div
-        style={{
-          position: "absolute",
-          top: 120,
-          right: 48,
-          color: "var(--ink-inverse)",
-          opacity: 0.6,
-          fontSize: 11,
-          fontFamily: "var(--font-sans)",
-          letterSpacing: "0.14em",
-          textTransform: "uppercase",
-          writingMode: "vertical-rl",
-          textOrientation: "mixed",
-          animation: "heroFadeUp 0.9s var(--ease-out-quart) 0.8s both",
-        }}
-      >
+      <div className="hero-location-label">
         CICIBÓR DUŻY · WOJ. LUBELSKIE
       </div>
     </section>
