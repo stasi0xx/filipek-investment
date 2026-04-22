@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Cursor() {
   const dotRef  = useRef<HTMLDivElement>(null);
@@ -9,8 +9,14 @@ export default function Cursor() {
   const my = useRef(0);
   const rx = useRef(0);
   const ry = useRef(0);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
+    setIsMobile(window.matchMedia("(pointer: coarse)").matches);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
     const onMove = (e: MouseEvent) => { mx.current = e.clientX; my.current = e.clientY; };
     window.addEventListener("mousemove", onMove);
 
@@ -58,6 +64,8 @@ export default function Cursor() {
       });
     };
   }, []);
+
+  if (isMobile) return null;
 
   return (
     <>
