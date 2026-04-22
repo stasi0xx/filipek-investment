@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Reveal from "./Reveal";
+import RevealImage from "./RevealImage";
 
 const imgs = [
   "/assets/hero-nowy-relax.jpeg",
@@ -71,15 +72,15 @@ export default function Gallery() {
 
       {/* Desktop layout */}
       <div className="gallery-desktop">
-        <Reveal delay={0.15}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "2fr 1fr",
-              gap: 4,
-              padding: "0 4px",
-            }}
-          >
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "2fr 1fr",
+            gap: 4,
+            padding: "0 4px",
+          }}
+        >
+          <RevealImage direction="left" delay={0.15}>
             <div
               style={{ aspectRatio: "16/10", overflow: "hidden" }}
               onMouseEnter={() => setHovered(0)}
@@ -87,26 +88,30 @@ export default function Gallery() {
             >
               <div style={imgStyle(imgs[0], hovered === 0)} />
             </div>
-            <div style={{ display: "grid", gridTemplateRows: "1fr 1fr", gap: 4 }}>
+          </RevealImage>
+          <div style={{ display: "grid", gridTemplateRows: "1fr 1fr", gap: 4 }}>
+            <RevealImage direction="right" delay={0.2}>
               <div
-                style={{ overflow: "hidden" }}
+                style={{ overflow: "hidden", height: "100%" }}
                 onMouseEnter={() => setHovered(1)}
                 onMouseLeave={() => setHovered(null)}
               >
                 <div style={imgStyle(imgs[1], hovered === 1)} />
               </div>
+            </RevealImage>
+            <RevealImage direction="right" delay={0.28}>
               <div
-                style={{ overflow: "hidden" }}
+                style={{ overflow: "hidden", height: "100%" }}
                 onMouseEnter={() => setHovered(2)}
                 onMouseLeave={() => setHovered(null)}
               >
                 <div style={imgStyle(imgs[2], hovered === 2)} />
               </div>
-            </div>
+            </RevealImage>
           </div>
-        </Reveal>
+        </div>
 
-        <Reveal delay={0.2}>
+        <RevealImage direction="bottom" delay={0.2}>
           <div style={{ padding: "0 4px", marginTop: 4 }}>
             <div
               style={{ aspectRatio: "21/9", overflow: "hidden" }}
@@ -116,22 +121,25 @@ export default function Gallery() {
               <div style={imgStyle(imgs[3], hovered === 3)} />
             </div>
           </div>
-        </Reveal>
+        </RevealImage>
       </div>
 
       {/* Mobile layout – each image stacked with individual reveal */}
       <div className="gallery-mobile">
-        {imgs.map((src, i) => (
-          <Reveal key={src} delay={i * 0.12}>
-            <div
-              className="gallery-mobile-img"
-              onMouseEnter={() => setHovered(i)}
-              onMouseLeave={() => setHovered(null)}
-            >
-              <div style={imgStyle(src, hovered === i)} />
-            </div>
-          </Reveal>
-        ))}
+        {imgs.map((src, i) => {
+          const dirs = ["left", "right", "left", "right"] as const;
+          return (
+            <RevealImage key={src} direction={dirs[i]} delay={i * 0.1}>
+              <div
+                className="gallery-mobile-img"
+                onMouseEnter={() => setHovered(i)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                <div style={imgStyle(src, hovered === i)} />
+              </div>
+            </RevealImage>
+          );
+        })}
       </div>
     </section>
   );

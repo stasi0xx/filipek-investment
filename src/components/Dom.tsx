@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const specs = [
   ["Powierzchnia", "122 m²"],
-  ["Działka",      "590 m²"],
-  ["Sypialnie",    "3"],
-  ["Łazienki",     "2"],
-  ["Garaż",        "2-stan."],
-  ["Piętra",       "2"],
+  ["Działka", "590 m²"],
+  ["Sypialnie", "3"],
+  ["Łazienki", "2"],
+  ["Garaż", "2-stan."],
+  ["Piętra", "2"],
 ];
 
 export default function Dom() {
@@ -167,23 +167,15 @@ export default function Dom() {
               borderRadius: "var(--radius-lg)",
               overflow: "hidden",
               background: "var(--surface-raised)",
-              aspectRatio: "4/5",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              padding: "32px",
             }}
           >
             <Image
-              src="/assets/floor-plan.png"
+              src="/assets/floor-plans.jpg"
               alt="Rzut domu Nowy Relax"
               width={600}
               height={750}
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-                padding: "40px",
-              }}
+              style={{ width: "100%", height: "auto", display: "block" }}
             />
           </div>
         </Reveal>

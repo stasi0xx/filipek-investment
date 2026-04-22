@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Reveal from "./Reveal";
+import RevealImage from "./RevealImage";
 
 const pillars = [
   {
@@ -48,25 +49,27 @@ export default function About() {
                   transition: "transform 0.35s ease",
                 }}
               >
-                <div
-                  style={{
-                    aspectRatio: "4/5",
-                    borderRadius: "var(--radius-lg)",
-                    overflow: "hidden",
-                  }}
-                >
+                <RevealImage direction={i === 0 ? "left" : i === 1 ? "bottom" : "right"} delay={i * 0.1}>
                   <div
                     style={{
-                      width: "100%",
-                      height: "100%",
-                      backgroundImage: `url(${p.img})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      transform: hovered === i ? "scale(1.06)" : "scale(1)",
-                      transition: "transform 0.5s ease",
+                      aspectRatio: "4/5",
+                      borderRadius: "var(--radius-lg)",
+                      overflow: "hidden",
                     }}
-                  />
-                </div>
+                  >
+                    <div
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        backgroundImage: `url(${p.img})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        transform: hovered === i ? "scale(1.06)" : "scale(1)",
+                        transition: "transform 0.5s ease",
+                      }}
+                    />
+                  </div>
+                </RevealImage>
                 <div
                   style={{
                     fontFamily: "var(--font-sans)",

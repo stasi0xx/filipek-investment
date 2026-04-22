@@ -16,21 +16,23 @@ const stats = [
 
 export default function StatsBar() {
   const barRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const bar = barRef.current;
-    if (!bar || window.innerWidth > 768) return;
-
-    bar.style.scrollSnapType = "none";
+    const track = trackRef.current;
+    if (!bar || !track || window.innerWidth > 768) return;
 
     const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: bar,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1,
-        onUpdate: (self) => {
-          bar.scrollLeft = self.progress * (bar.scrollWidth - bar.clientWidth);
+      const distance = track.scrollWidth - bar.clientWidth;
+      gsap.to(track, {
+        x: -distance,
+        ease: "none",
+        scrollTrigger: {
+          trigger: bar,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 1,
         },
       });
     });
@@ -55,19 +57,15 @@ export default function StatsBar() {
         }
         @media (max-width: 768px) {
           .stats-bar {
-            display: flex;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
+            overflow: hidden;
             padding: 36px 0;
-            scrollbar-width: none;
           }
-          .stats-bar::-webkit-scrollbar {
-            display: none;
+          .stats-track {
+            display: flex;
+            will-change: transform;
           }
           .stats-item {
             flex: 0 0 72vw;
-            scroll-snap-align: start;
             padding: 0 32px;
           }
           .stats-item:first-child {
@@ -79,6 +77,7 @@ export default function StatsBar() {
         }
       `}</style>
       <div className="stats-bar" ref={barRef}>
+        <div className="stats-track" ref={trackRef}>
         {stats.map((s, i) => (
           <Reveal key={s.label} delay={i * 0.08}>
             <div
@@ -121,6 +120,7 @@ export default function StatsBar() {
             </div>
           </Reveal>
         ))}
+        </div>
       </div>
     </>
   );

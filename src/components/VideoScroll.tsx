@@ -208,7 +208,7 @@ export default function VideoScroll() {
               textTransform: "uppercase",
               color: "var(--brand-oak)",
               marginBottom: 16,
-              textShadow: "0 1px 8px rgba(0,0,0,0.8), 0 0px 2px rgba(0,0,0,0.9)",
+
             }}
           >
             {captions[capIdx].tag}
@@ -218,10 +218,10 @@ export default function VideoScroll() {
               fontFamily: "var(--font-serif)",
               fontSize: "clamp(1.4rem, 5vw, 2.8rem)",
               fontWeight: 400,
-              color: "#fff",
+              color: "var(--brand-graphite)",
               lineHeight: 1.15,
               whiteSpace: "pre-line",
-              textShadow: "0 2px 12px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9)",
+
             }}
           >
             {captions[capIdx].text}
