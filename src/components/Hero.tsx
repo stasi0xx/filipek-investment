@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import ScrollArrow from "./ScrollArrow";
 import Button from "./Button";
 
-const FRAME_COUNT = 151;
+const FRAME_COUNT = 112;
 const FRAME_PATH = (n: number) =>
-  `/assets/hero-frames/frame_${String(n).padStart(4, "0")}.jpg`;
+  `/assets/hero-frames/frame_${String(n).padStart(4, "0")}.webp`;
 
 function drawCover(
   ctx: CanvasRenderingContext2D,

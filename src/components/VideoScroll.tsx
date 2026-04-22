@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const FRAME_COUNT = 67;
+const FRAME_COUNT = 90;
 const FRAME_PATH = (n: number) =>
-  `/assets/frames/frame_${String(n).padStart(4, "0")}.jpg`;
+  `/assets/frames/frame_${String(n).padStart(4, "0")}.webp`;
 
 const captions = [
   { tag: "Odkryj przestrzeń", text: "Każdy metr kwadratowy\nzaprojektowany z myślą o Tobie" },

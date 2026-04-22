@@ -21,9 +21,11 @@ export default function StatsBar() {
   useEffect(() => {
     const bar = barRef.current;
     const track = trackRef.current;
-    if (!bar || !track || window.innerWidth > 768) return;
+    if (!bar || !track) return;
 
-    const ctx = gsap.context(() => {
+    const mm = gsap.matchMedia();
+
+    mm.add("(max-width: 768px)", () => {
       const distance = track.scrollWidth - bar.clientWidth;
       gsap.to(track, {
         x: -distance,
@@ -37,7 +39,7 @@ export default function StatsBar() {
       });
     });
 
-    return () => ctx.revert();
+    return () => mm.revert();
   }, []);
 
   return (
@@ -46,6 +48,8 @@ export default function StatsBar() {
         .stats-bar {
           background: var(--surface-ink);
           padding: 40px 48px;
+        }
+        .stats-track {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
         }
