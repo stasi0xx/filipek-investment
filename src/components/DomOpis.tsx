@@ -136,36 +136,38 @@ export default function DomOpis() {
           {pillars.map((p, i) => (
             <Reveal key={p.n} delay={i * 0.1}>
               <div className="domopis-pillar">
-                <span
-                  style={{
-                    fontFamily: "var(--font-serif)",
-                    fontSize: "2.8rem",
-                    fontWeight: 400,
-                    lineHeight: 1,
-                    color: "rgba(255,255,255,0.8)",
-                    letterSpacing: "-0.03em",
-                  }}
-                >
-                  {p.n}
-                </span>
-                <div
-                  style={{
-                    fontFamily: "var(--font-sans)",
-                    fontSize: 11,
-                    fontWeight: 600,
-                    letterSpacing: "0.16em",
-                    textTransform: "uppercase",
-                    color: "var(--brand-sand)",
-                  }}
-                >
-                  {p.title}
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-serif)",
+                      fontSize: "2.8rem",
+                      fontWeight: 400,
+                      lineHeight: 1,
+                      color: "rgba(255,255,255,0.8)",
+                      letterSpacing: "-0.03em",
+                    }}
+                  >
+                    {p.n}
+                  </span>
+                  <div
+                    style={{
+                      fontFamily: "var(--font-sans)",
+                      fontSize: 11,
+                      fontWeight: 600,
+                      letterSpacing: "0.16em",
+                      textTransform: "uppercase",
+                      color: "var(--brand-sand)",
+                    }}
+                  >
+                    {p.title}
+                  </div>
                 </div>
                 <p
                   style={{
                     fontFamily: "var(--font-sans)",
                     fontSize: 15,
                     lineHeight: 1.7,
-                    color: "var(--ink-inverse-secondary)",
+                    color: "rgba(255,255,255,0.75)",
                     margin: 0,
                   }}
                 >
@@ -195,7 +197,7 @@ export default function DomOpis() {
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <Button as="a" href="#kontakt" variant="primary-inverse" size="lg">
+            <Button as="a" href="/oferta" variant="primary-inverse" size="lg">
               Poznaj szczegóły oferty
             </Button>
           </Reveal>

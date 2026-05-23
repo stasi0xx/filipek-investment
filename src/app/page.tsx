@@ -7,6 +7,7 @@ import DomOpis from "@/components/DomOpis";
 import DlaczegoNowyRelax from "@/components/DlaczegoNowyRelax";
 import LokalizacjaBanner from "@/components/LokalizacjaBanner";
 import PoznajInwestora from "@/components/PoznajInwestora";
+import BuildingTimeline from "@/components/BuildingTimeline";
 import FinalCTA from "@/components/FinalCTA";
 import Gallery from "@/components/Gallery";
 import Dom from "@/components/Dom";
@@ -30,6 +31,7 @@ export default function Home() {
         <DlaczegoNowyRelax />
         <LokalizacjaBanner />
         <PoznajInwestora />
+        <BuildingTimeline />
         <FinalCTA />
       </main>
       <Footer />

@@ -1,0 +1,140 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "Filipek INVESTMENT" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e4]: Filipek
+      - generic [ref=e5]: INVESTMENT
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Strona główna" [ref=e8] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e9]:
+        - link "Oferta" [ref=e10] [cursor=pointer]:
+          - /url: /oferta
+      - listitem [ref=e11]:
+        - link "Lokalizacja" [ref=e12] [cursor=pointer]:
+          - /url: /lokalizacja
+      - listitem [ref=e13]:
+        - link "Galeria" [ref=e14] [cursor=pointer]:
+          - /url: /galeria
+      - listitem [ref=e15]:
+        - link "O inwestorze" [ref=e16] [cursor=pointer]:
+          - /url: /inwestor
+      - listitem [ref=e17]:
+        - link "Kontakt" [ref=e18] [cursor=pointer]:
+          - /url: /kontakt
+    - link "Zapytaj o dostępność" [ref=e19] [cursor=pointer]:
+      - /url: "#kontakt"
+  - main [ref=e20]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e28]: Nowy Relax · Cicibór Duży · woj. lubelskie
+        - heading "Lokalizacja" [level=1] [ref=e30]
+        - paragraph [ref=e32]: Nowy Relax powstaje w Ciciborze Dużym, zaledwie ok. 1 km od granicy Białej Podlaskiej. Lokalizacja dla osób, które chcą mieć szybki dostęp do miasta, ale na co dzień mieszkać spokojniej — z własnym ogrodem, garażem i większą przestrzenią.
+        - generic [ref=e34]:
+          - link "Umów prezentację inwestycji" [ref=e35] [cursor=pointer]:
+            - /url: /#kontakt
+          - link "Zobacz na mapie" [ref=e36] [cursor=pointer]:
+            - /url: "#mapa"
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: Odległości od inwestycji
+          - generic [ref=e41]:
+            - generic [ref=e42]: ok. 1 km
+            - generic [ref=e43]: do granicy Białej Podlaskiej
+          - generic [ref=e44]:
+            - generic [ref=e45]: kilka km
+            - generic [ref=e46]: do węzła autostradowego Cicibór
+          - generic [ref=e47]:
+            - generic [ref=e48]: ok. 170 km
+            - generic [ref=e49]: do Warszawy (A2)
+        - generic [ref=e50]: Cicibór Duży · woj. lubelskie
+    - generic [ref=e53]:
+      - generic [ref=e55]: Blisko miasta, poza jego tempem
+      - heading "Wszystko co ważne, kilka minut dalej" [level=2] [ref=e57]:
+        - text: Wszystko co ważne,
+        - emphasis [ref=e58]: kilka minut dalej
+      - paragraph [ref=e60]: Cicibór Duży daje wygodny dostęp do Białej Podlaskiej i miejskiej infrastruktury, a jednocześnie pozwala mieszkać w spokojniejszym, podmiejskim otoczeniu.
+      - paragraph [ref=e62]: To dobre rozwiązanie dla osób, które porównują zakup mieszkania w mieście z możliwością zamieszkania w domu z działką i garażem — bez konieczności rezygnowania z wygody codziennego dojazdu.
+      - link "Umów prezentację inwestycji" [ref=e64] [cursor=pointer]:
+        - /url: /#kontakt
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e72]: Zobacz lokalizację inwestycji
+        - generic [ref=e74]:
+          - heading "Nowy Relax w Ciciborze Dużym, w pobliżu Białej Podlaskiej" [level=2] [ref=e75]
+          - link "Otwórz w Google Maps →" [ref=e76] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/QisDZdJrT2Ux6EWa8
+      - generic [ref=e78]:
+        - iframe [ref=e79]:
+          
+        - generic [ref=e80]:
+          - generic [ref=e81]: Nowy Relax
+          - generic [ref=e82]: Cicibór Duży · woj. lubelskie
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e87]: Najważniejsze atuty lokalizacji
+        - heading "Dlaczego Cicibór Duży?" [level=2] [ref=e89]
+      - generic [ref=e90]:
+        - generic [ref=e92]:
+          - generic [ref=e93]: "01"
+          - generic [ref=e94]: ok. 1 km od granicy Białej Podlaskiej
+          - paragraph [ref=e95]: Szybki dostęp do miejskiej infrastruktury — sklepów, szkół, przychodni i usług. Biała Podlaska z całym swoim zapleczem jest dosłownie za rogiem.
+        - generic [ref=e97]:
+          - generic [ref=e98]: "02"
+          - generic [ref=e99]: Cicibór Duży — podmiejska lokalizacja
+          - paragraph [ref=e100]: Spokojniejsza, zieleńsza i z większą przestrzenią niż w centrum. Lokalizacja dla osób, które chcą mieszkać bez miejskiego tempa, nie rezygnując z bliskości miasta.
+        - generic [ref=e102]:
+          - generic [ref=e103]: "03"
+          - generic [ref=e104]: Bliskość węzła Cicibór
+          - paragraph [ref=e105]: Wygodny wyjazd w dalsze trasy. Autostrada A2 zapewnia szybkie połączenie z Warszawą, Lublinem i resztą kraju.
+        - generic [ref=e107]:
+          - generic [ref=e108]: "04"
+          - generic [ref=e109]: Własna działka przy domu
+          - paragraph [ref=e110]: Ok. 450 m² gruntu wyłącznie do dyspozycji właściciela. Ogród, taras, podjazd — bez wspólnych przestrzeni i sąsiadów za ścianą.
+    - generic [ref=e113]:
+      - generic [ref=e115]: Cicibór Duży · ok. 1 km od Białej Podlaskiej
+      - heading "Chcesz zobaczyć miejsce inwestycji?" [level=2] [ref=e117]:
+        - text: Chcesz zobaczyć
+        - emphasis [ref=e118]: miejsce inwestycji?
+      - paragraph [ref=e122]: Umów prezentację i poznaj lokalizację Nowego Relaxu na żywo. Pokażemy położenie działek, układ inwestycji i odpowiemy na pytania dotyczące dojazdu oraz otoczenia.
+      - generic [ref=e124]:
+        - link "Umów prezentację inwestycji" [ref=e125] [cursor=pointer]:
+          - /url: /#kontakt
+        - link "Zobacz ofertę" [ref=e126] [cursor=pointer]:
+          - /url: /oferta
+  - contentinfo [ref=e127]:
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - generic [ref=e131]: Nowy Relax
+          - text: Inwestycja Filipek Investment Sp. z o.o.
+        - paragraph [ref=e132]: Dom to więcej niż adres. To początek historii.
+      - generic [ref=e133]:
+        - generic [ref=e134]: Nawigacja
+        - generic [ref=e135]:
+          - link "Strona główna" [ref=e136] [cursor=pointer]:
+            - /url: "#"
+          - link "Oferta" [ref=e137] [cursor=pointer]:
+            - /url: "#"
+          - link "Lokalizacja" [ref=e138] [cursor=pointer]:
+            - /url: "#"
+          - link "Galeria" [ref=e139] [cursor=pointer]:
+            - /url: "#"
+          - link "O inwestorze" [ref=e140] [cursor=pointer]:
+            - /url: "#"
+          - link "Kontakt" [ref=e141] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e142]:
+        - generic [ref=e143]: Kontakt
+        - generic [ref=e144]:
+          - link "+48 692 404 796" [ref=e145] [cursor=pointer]:
+            - /url: tel:+48692404796
+          - link "nowyrelax@fi-invest.pl" [ref=e146] [cursor=pointer]:
+            - /url: mailto:nowyrelax@fi-invest.pl
+    - generic [ref=e147]:
+      - paragraph [ref=e148]: Materiały zamieszczone na stronie mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego. Szczegółowe warunki sprzedaży, standard wykonania oraz aktualna dostępność domów są potwierdzane indywidualnie z zainteresowanymi klientami.
+      - paragraph [ref=e149]: © 2026 Filipek Investment Sp. z o.o. Wszystkie prawa zastrzeżone.
+  - button "Open Next.js Dev Tools" [ref=e155] [cursor=pointer]:
+    - img [ref=e156]
+  - alert [ref=e159]

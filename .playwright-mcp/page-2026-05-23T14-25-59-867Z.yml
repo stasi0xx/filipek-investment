@@ -1,0 +1,220 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "Filipek INVESTMENT" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e4]: Filipek
+      - generic [ref=e5]: INVESTMENT
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Strona główna" [ref=e8] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e9]:
+        - link "Oferta" [ref=e10] [cursor=pointer]:
+          - /url: /oferta
+      - listitem [ref=e11]:
+        - link "Lokalizacja" [ref=e12] [cursor=pointer]:
+          - /url: /lokalizacja
+      - listitem [ref=e13]:
+        - link "Galeria" [ref=e14] [cursor=pointer]:
+          - /url: /galeria
+      - listitem [ref=e15]:
+        - link "O inwestorze" [ref=e16] [cursor=pointer]:
+          - /url: /inwestor
+      - listitem [ref=e17]:
+        - link "Kontakt" [ref=e18] [cursor=pointer]:
+          - /url: /kontakt
+    - link "Zapytaj o dostępność" [ref=e19] [cursor=pointer]:
+      - /url: "#kontakt"
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - generic [ref=e26]: Ładowanie…
+      - generic [ref=e27]:
+        - generic [ref=e28]: Filipek Investment · Inwestycja 2026
+        - heading "Nowy Relax." [level=1] [ref=e29]
+        - paragraph [ref=e30]:
+          - text: Dom pod Białą Podlaską, w którym
+          - text: codzienność ma więcej oddechu.
+        - paragraph [ref=e31]: Nowy Relax to kameralna inwestycja Filipek Investment w Ciciborze Dużym, zaledwie ok. 1 km od granicy Białej Podlaskiej. Powstają tu nowoczesne domy w zabudowie bliźniaczej — z własnym ogrodem, garażem w bryle budynku, przemyślanym układem i spokojniejszym otoczeniem blisko miasta.
+        - generic [ref=e32]:
+          - link "Zapytaj o dostępność domu" [ref=e33] [cursor=pointer]:
+            - /url: "#kontakt"
+          - link "Zobacz ofertę" [ref=e34] [cursor=pointer]:
+            - /url: "#oferta"
+      - img [ref=e36]
+      - generic [ref=e38]: CICIBÓR DUŻY · WOJ. LUBELSKIE
+    - generic [ref=e40]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: 122m²
+        - generic [ref=e44]: powierzchni domu
+      - generic [ref=e46]:
+        - generic [ref=e47]: 590m²
+        - generic [ref=e48]: powierzchni działki
+      - generic [ref=e50]:
+        - generic [ref=e51]: "3"
+        - generic [ref=e52]: sypialnie
+      - generic [ref=e54]:
+        - generic [ref=e55]: 1km
+        - generic [ref=e56]: od Białej Podlaskiej
+    - generic [ref=e58]:
+      - generic [ref=e60]: Ładowanie…
+      - generic [ref=e61]:
+        - generic [ref=e62]: Filipek Investment
+        - generic [ref=e63]: Dom to więcej niż adres. To początek historii.
+    - generic [ref=e69]:
+      - generic [ref=e71]: Najważniejsze informacje
+      - generic [ref=e72]:
+        - generic [ref=e74]:
+          - generic [ref=e75]: 121,87 m²
+          - generic [ref=e77]: powierzchnia domu
+        - generic [ref=e79]:
+          - generic [ref=e80]: ok. 450 m²
+          - generic [ref=e82]: działka przy domu
+        - generic [ref=e84]:
+          - generic [ref=e85]: 4 domy
+          - generic [ref=e87]: dostępne w Etapie 1
+        - generic [ref=e89]:
+          - generic [ref=e90]: garaż
+          - generic [ref=e91]:
+            - generic [ref=e92]: w bryle budynku
+            - generic [ref=e93]: w każdym domu
+        - generic [ref=e96]:
+          - generic [ref=e97]: 630 000 zł
+          - generic [ref=e98]:
+            - generic [ref=e99]: cena domu w Etapie 1
+            - generic [ref=e100]: brutto
+        - generic [ref=e102]:
+          - generic [ref=e103]: 0 zł PCC
+          - generic [ref=e104]:
+            - generic [ref=e105]: oszczędność ok. 12 600 zł
+            - generic [ref=e106]: względem zakupu z rynku wtórnego
+        - generic [ref=e108]:
+          - generic [ref=e109]: marzec 2027
+          - generic [ref=e111]: planowane zakończenie robót
+    - generic [ref=e113]:
+      - generic [ref=e114]:
+        - generic [ref=e116]: Układ i przestrzeń
+        - heading "Dom, który dobrze działa na co dzień" [level=2] [ref=e118]
+        - paragraph [ref=e120]: Nowy Relax obejmuje docelowo 8 domów w zabudowie bliźniaczej. Etap 1 to 4 domy w dwóch budynkach bliźniaczych — każdy o powierzchni 121,87 m² z garażem i własną działką.
+      - generic [ref=e121]:
+        - generic [ref=e123]:
+          - generic [ref=e124]: "01"
+          - generic [ref=e125]: Parter
+          - paragraph [ref=e126]: Przestronna część dzienna otwarta na ogród, praktyczna spiżarka i garaż bezpośrednio w bryle budynku — wszystko pod ręką bez zbędnych kroków.
+        - generic [ref=e128]:
+          - generic [ref=e129]: "02"
+          - generic [ref=e130]: Pierwsze piętro
+          - paragraph [ref=e131]: Prywatna strefa sypialni oddzielona od dziennej — spokój i cisza wtedy, gdy tego potrzebujesz. Dodatkowa przestrzeń strychowa na rzeczy sezonowe.
+        - generic [ref=e133]:
+          - generic [ref=e134]: "03"
+          - generic [ref=e135]: Na zewnątrz
+          - paragraph [ref=e136]: Działka ok. 450 m² tylko do Twojej dyspozycji. Własny ogród, własne podwórko — bez wspólnych klatek i sąsiadów za ścianą.
+      - generic [ref=e137]:
+        - paragraph [ref=e139]: To propozycja dla osób, które szukają czegoś więcej niż mieszkania — własnego ogrodu, większej prywatności i spokojniejszego rytmu dnia, bez rezygnowania z bliskości miasta.
+        - link "Poznaj szczegóły oferty" [ref=e141] [cursor=pointer]:
+          - /url: "#kontakt"
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - generic [ref=e146]: Dlaczego Nowy Relax?
+        - heading "Cztery argumenty, które robią różnicę" [level=2] [ref=e148]
+        - paragraph [ref=e150]: Nowy Relax to nie tylko adres — to przemyślana odpowiedź na potrzeby osób, które cenią spokój, komfort i niezależność, bez rezygnowania z bliskości miasta.
+      - generic [ref=e151]:
+        - generic [ref=e153]:
+          - img "Blisko miasta, spokojniej na co dzień" [ref=e155]
+          - generic [ref=e156]:
+            - generic [ref=e157]: "01"
+            - generic [ref=e158]: Blisko miasta, spokojniej na co dzień
+            - paragraph [ref=e159]: Cicibór Duży daje szybki dostęp do Białej Podlaskiej, a jednocześnie pozwala mieszkać w spokojniejszym, podmiejskim otoczeniu. To dobre rozwiązanie dla osób, które chcą mieć miasto blisko, ale niekoniecznie za oknem.
+        - generic [ref=e161]:
+          - img "Przemyślany układ domu" [ref=e163]
+          - generic [ref=e164]:
+            - generic [ref=e165]: "02"
+            - generic [ref=e166]: Przemyślany układ domu
+            - paragraph [ref=e167]: "Na parterze: salon z jadalnią, kuchnia, łazienka, spiżarka, przedsionek i garaż. Na piętrze: trzy pokoje, dwie łazienki i garderoba przy głównej sypialni — prywatna strefa oddzielona od dziennej."
+        - generic [ref=e169]:
+          - img "Standard deweloperski+" [ref=e171]
+          - generic [ref=e172]:
+            - generic [ref=e173]: "03"
+            - generic [ref=e174]: Standard deweloperski+
+            - paragraph [ref=e175]: Domy oddawane z pompą ciepła, rekuperacją, ogrzewaniem podłogowym, instalacjami, elewacją, ogrodzeniem, podjazdem, tarasem i uporządkowanym terenem wokół budynku.
+        - generic [ref=e177]:
+          - img "Mniej kosztów na starcie" [ref=e179]
+          - generic [ref=e180]:
+            - generic [ref=e181]: "04"
+            - generic [ref=e182]: Mniej kosztów na starcie
+            - paragraph [ref=e183]: Kupując dom od dewelopera, nie płacisz podatku PCC. Przy cenie 630 000 zł oznacza to oszczędność ok. 12 600 zł w porównaniu z zakupem nieruchomości z rynku wtórnego.
+    - generic [ref=e186]:
+      - generic [ref=e188]: Lokalizacja
+      - heading "Cicibór Duży, ok. 1 km od Białej Podlaskiej" [level=2] [ref=e190]:
+        - text: Cicibór Duży,
+        - emphasis [ref=e191]: ok. 1 km od Białej Podlaskiej
+      - paragraph [ref=e195]: To lokalizacja dla osób, które chcą mieć blisko do miasta, ale na co dzień korzystać z większej przestrzeni, własnego ogrodu i spokojniejszego otoczenia.
+      - link "Zobacz lokalizację" [ref=e197] [cursor=pointer]:
+        - /url: /lokalizacja
+    - generic [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e202]: Inwestycja lokalnego dewelopera
+        - heading "Poznaj inwestora" [level=2] [ref=e204]:
+          - text: Poznaj
+          - emphasis [ref=e205]: inwestora
+        - paragraph [ref=e207]:
+          - text: Za inwestycją Nowy Relax stoi
+          - strong [ref=e208]: Filipek Investment Sp. z o.o.
+          - text: — lokalny inwestor mieszkaniowy realizujący kameralne inwestycje domów i lokali w zabudowie jednorodzinnej.
+        - link "Poznaj inwestora" [ref=e210] [cursor=pointer]:
+          - /url: "#kontakt"
+      - generic [ref=e211]:
+        - generic [ref=e213]:
+          - generic [ref=e214]: "23"
+          - generic [ref=e215]:
+            - text: domy i lokale
+            - text: zrealizowane i oddane
+        - generic [ref=e217]:
+          - generic [ref=e218]: "4"
+          - generic [ref=e219]:
+            - text: lokale
+            - text: aktualnie w realizacji
+    - generic [ref=e222]:
+      - generic [ref=e224]: Etap 1 · 4 domy dostępne
+      - heading "Szukasz domu pod Białą Podlaską?" [level=2] [ref=e226]:
+        - text: Szukasz domu
+        - emphasis [ref=e227]: pod Białą Podlaską?
+      - paragraph [ref=e231]: Zapytaj o dostępność domów w Etapie 1 inwestycji Nowy Relax. Odpowiemy na pytania dotyczące układu domu, standardu, rezerwacji, finansowania i planowanego terminu realizacji.
+      - generic [ref=e233]:
+        - link "Zapytaj o dostępność domu" [ref=e234] [cursor=pointer]:
+          - /url: /kontakt
+        - link "Umów prezentację inwestycji" [ref=e235] [cursor=pointer]:
+          - /url: /kontakt
+  - contentinfo [ref=e236]:
+    - generic [ref=e237]:
+      - generic [ref=e238]:
+        - generic [ref=e239]:
+          - generic [ref=e240]: Nowy Relax
+          - text: Inwestycja Filipek Investment Sp. z o.o.
+        - paragraph [ref=e241]: Dom to więcej niż adres. To początek historii.
+      - generic [ref=e242]:
+        - generic [ref=e243]: Nawigacja
+        - generic [ref=e244]:
+          - link "Strona główna" [ref=e245] [cursor=pointer]:
+            - /url: "#"
+          - link "Oferta" [ref=e246] [cursor=pointer]:
+            - /url: "#"
+          - link "Lokalizacja" [ref=e247] [cursor=pointer]:
+            - /url: "#"
+          - link "Galeria" [ref=e248] [cursor=pointer]:
+            - /url: "#"
+          - link "O inwestorze" [ref=e249] [cursor=pointer]:
+            - /url: "#"
+          - link "Kontakt" [ref=e250] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e251]:
+        - generic [ref=e252]: Kontakt
+        - generic [ref=e253]:
+          - link "+48 692 404 796" [ref=e254] [cursor=pointer]:
+            - /url: tel:+48692404796
+          - link "nowyrelax@fi-invest.pl" [ref=e255] [cursor=pointer]:
+            - /url: mailto:nowyrelax@fi-invest.pl
+    - generic [ref=e256]:
+      - paragraph [ref=e257]: Materiały zamieszczone na stronie mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego. Szczegółowe warunki sprzedaży, standard wykonania oraz aktualna dostępność domów są potwierdzane indywidualnie z zainteresowanymi klientami.
+      - paragraph [ref=e258]: © 2026 Filipek Investment Sp. z o.o. Wszystkie prawa zastrzeżone.
+  - button "Open Next.js Dev Tools" [ref=e264] [cursor=pointer]:
+    - img [ref=e265]

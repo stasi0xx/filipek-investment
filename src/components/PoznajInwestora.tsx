@@ -139,7 +139,7 @@ export default function PoznajInwestora() {
           </Reveal>
 
           <Reveal delay={0.18}>
-            <Button as="a" href="#kontakt" variant="primary" size="lg">
+            <Button as="a" href="/inwestor" variant="primary" size="lg">
               Poznaj inwestora
             </Button>
           </Reveal>

@@ -1,0 +1,577 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "StanAutomation" [ref=e5] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e6]:
+          - link "Usługi" [ref=e7] [cursor=pointer]:
+            - /url: "#uslugi"
+          - link "Cennik" [ref=e8] [cursor=pointer]:
+            - /url: "#cennik"
+          - link "Kontakt" [ref=e9] [cursor=pointer]:
+            - /url: "#kontakt"
+    - generic [ref=e16]:
+      - heading "Strona dla Twojej restauracji gotowa w 48 godzin." [level=1] [ref=e17]:
+        - text: Strona dla Twojej
+        - text: restauracji gotowa
+        - text: w 48 godzin.
+      - paragraph [ref=e18]: Klienci znajdą Cię na Google — i zarezerwują stolik ze strony. Jeśli nie jesteś zadowolony — oddajemy pieniądze.
+      - generic [ref=e19]:
+        - link "Zobacz demo →" [ref=e20] [cursor=pointer]:
+          - /url: "#demo"
+        - link "Sprawdź ceny" [ref=e21] [cursor=pointer]:
+          - /url: "#cennik"
+      - paragraph [ref=e22]: Zero zaliczki przed demo · 20 minut Twojego czasu · Zwrot 100% bez pytań
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: "0"
+          - generic [ref=e29]: +
+        - paragraph [ref=e30]: PageSpeed
+        - paragraph [ref=e31]: strona ładuje się błyskawicznie
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: "0"
+          - generic [ref=e35]: h
+        - paragraph [ref=e36]: realizacja
+        - paragraph [ref=e37]: od briefu do launch
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: "0"
+          - generic [ref=e41]: PLN
+        - paragraph [ref=e42]: miesięcznie
+        - paragraph [ref=e43]: subskrypcja od dnia 1
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: "0"
+          - generic [ref=e47]: "%"
+        - paragraph [ref=e48]: zwrot
+        - paragraph [ref=e49]: jeśli nie spodoba
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]: Czemu restauracje tracą klientów
+          - heading "Piękna restauracja. Niewidoczna w Google." [level=2] [ref=e56]
+          - paragraph [ref=e57]: Turyści szukają restauracji na telefonie zanim wyjdą z hotelu. Jeśli Twoje menu jest nieczytelne lub strona ładuje się 6 sekund — idą do konkurencji. Ty tego nie widzisz. Ale widzisz puste stoliki.
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - generic [ref=e64]: Restauracje w pobliżu
+              - generic [ref=e66]: G
+            - generic [ref=e67]:
+              - generic [ref=e68]: Otwarte teraz
+              - generic [ref=e69]: Ocena 4.0+
+              - generic [ref=e70]: Włoska
+          - generic [ref=e71]:
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Trattoria Roma
+              - generic [ref=e75]:
+                - generic [ref=e76]: "4.8"
+                - generic [ref=e77]:
+                  - img [ref=e78]
+                  - img [ref=e80]
+                  - img [ref=e82]
+                  - img [ref=e84]
+                  - img [ref=e86]
+                - generic [ref=e88]: (312)
+              - paragraph [ref=e89]: Restauracja włoska · $$
+              - paragraph [ref=e90]:
+                - text: Otwarte
+                - generic [ref=e91]: · do 22:00
+            - generic [ref=e94]:
+              - paragraph [ref=e95]: Gdańska Kuchnia
+              - generic [ref=e96]:
+                - generic [ref=e97]: "4.6"
+                - generic [ref=e98]:
+                  - img [ref=e99]
+                  - img [ref=e101]
+                  - img [ref=e103]
+                  - img [ref=e105]
+                  - img [ref=e107]
+                - generic [ref=e109]: (189)
+              - paragraph [ref=e110]: Restauracja polska · $$
+              - paragraph [ref=e111]:
+                - text: Otwarte
+                - generic [ref=e112]: · do 21:00
+            - generic [ref=e115]:
+              - paragraph [ref=e116]: Twoja restauracja
+              - paragraph [ref=e117]: Brak opinii
+              - paragraph [ref=e118]: Brak strony internetowej
+          - paragraph [ref=e121]: ↓ Twoja restauracja poniżej widocznego obszaru
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]: Co dostarczamy
+          - heading "Strona która pracuje na Ciebie 24 godziny na dobę." [level=2] [ref=e125]
+          - paragraph [ref=e126]: "Czytelne menu z cenami. Rezerwacje online bez dzwonienia. Strona ładuje się w sekundy — klienci nie odchodzą przez długie ładowanie. AI SEO: widoczny w Google, ChatGPT i Perplexity."
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: Restauracja Italiana
+            - paragraph [ref=e132]: Sopot · Czynne 12:00–22:00
+            - generic [ref=e133]:
+              - generic [ref=e134]: Menu
+              - generic [ref=e135]: Rezerwuj
+              - generic [ref=e136]: Galeria
+          - generic [ref=e137]:
+            - paragraph [ref=e138]: Wybierz datę
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - generic [ref=e141]: Wt
+                - generic [ref=e142]: "20"
+              - generic [ref=e143]:
+                - generic [ref=e144]: Śr
+                - generic [ref=e145]: "21"
+              - generic [ref=e146]:
+                - generic [ref=e147]: Cz
+                - generic [ref=e148]: "22"
+              - generic [ref=e149]:
+                - generic [ref=e150]: Pt
+                - generic [ref=e151]: "23"
+              - generic [ref=e152]:
+                - generic [ref=e153]: So
+                - generic [ref=e154]: "24"
+            - generic [ref=e155]:
+              - generic [ref=e156]: Liczba gości
+              - generic [ref=e157]:
+                - generic [ref=e159]: −
+                - generic [ref=e160]: "2"
+                - generic [ref=e162]: +
+            - generic [ref=e163]:
+              - paragraph [ref=e164]: Dostępne godziny
+              - generic [ref=e165]:
+                - generic [ref=e166]: 12:00
+                - generic [ref=e167]: 13:00
+                - generic [ref=e168]: 14:00
+                - generic [ref=e169]: 18:00
+                - generic [ref=e170]: 19:00
+                - generic [ref=e171]: 20:00
+                - generic [ref=e172]: 21:00
+                - generic [ref=e173]: 21:30
+            - generic [ref=e174]: Potwierdź rezerwację →
+            - paragraph [ref=e175]: Potwierdzenie SMS i email · Bez opłaty z góry
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - generic [ref=e178]: Mierzalne wyniki
+          - heading "Liczby które możesz sprawdzić sam — zanim zdecydujesz." [level=2] [ref=e179]
+          - paragraph [ref=e180]: Ile stolików zajął Ci Google w zeszłym tygodniu? Ile osób odwiedziło stronę i ilu zarezerwowało? Te liczby masz pod ręką od pierwszego dnia — bez agencji, bez zgadywania.
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - paragraph [ref=e185]: Panel restauratora
+              - paragraph [ref=e186]: Ten tydzień · Restauracja Italiana
+            - generic [ref=e189]: Na żywo
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - paragraph [ref=e192]: Rezerwacje online
+              - paragraph [ref=e193]: "0"
+              - paragraph [ref=e194]: ↑ +12% vs zeszły tydz.
+            - generic [ref=e195]:
+              - paragraph [ref=e196]: Wizyty na stronie
+              - paragraph [ref=e197]: "0"
+              - paragraph [ref=e198]: ↑ +8% vs zeszły tydz.
+            - generic [ref=e199]:
+              - paragraph [ref=e200]: Konwersja strony
+              - paragraph [ref=e201]: 0.0%
+              - paragraph [ref=e202]: ↑ +0.4pp
+            - generic [ref=e203]:
+              - paragraph [ref=e204]: Pozycja w Google
+              - paragraph [ref=e205]: "#0"
+              - paragraph [ref=e206]: ↑ 3 miejsca w górę
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - paragraph [ref=e209]: Wizyty / dzień
+              - paragraph [ref=e210]: "Dziś: 61"
+            - generic [ref=e212]:
+              - paragraph [ref=e213]: Pn
+              - paragraph [ref=e214]: Wt
+              - paragraph [ref=e215]: Śr
+              - paragraph [ref=e216]: Cz
+              - paragraph [ref=e217]: Pt
+              - paragraph [ref=e218]: So
+              - paragraph [ref=e219]: Nd
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - generic [ref=e223]: Przykłady naszych realizacji
+        - heading "Twoja restauracja mogłaby tak wyglądać." [level=2] [ref=e224]:
+          - text: Twoja restauracja
+          - text: mogłaby tak wyglądać.
+        - paragraph [ref=e225]: Każde demo przygotowujemy pod konkretny typ lokalu. Poniżej przykłady — kliknij żeby zobaczyć pełną wersję.
+      - generic [ref=e226]:
+        - generic [ref=e227]:
+          - generic [ref=e229]:
+            - generic [ref=e230]:
+              - generic [ref=e231]: Gdańsk
+              - generic [ref=e232]:
+                - generic [ref=e234]: "92"
+                - generic [ref=e236]: "96"
+                - generic [ref=e238]: "98"
+                - generic [ref=e240]: "95"
+            - generic [ref=e258]: Rezerwuj stolik →
+          - generic [ref=e259]:
+            - generic [ref=e260]:
+              - generic [ref=e261]: Pasta
+              - generic [ref=e262]: Pizza
+              - generic [ref=e263]: Wino
+            - heading "Restauracja włoska" [level=3] [ref=e264]
+            - paragraph [ref=e265]: Gdańsk
+            - button "Zobacz demo →" [ref=e266]
+        - generic [ref=e267]:
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - generic [ref=e271]: Gdynia
+              - generic [ref=e272]:
+                - generic [ref=e274]: "92"
+                - generic [ref=e276]: "96"
+                - generic [ref=e278]: "98"
+                - generic [ref=e280]: "95"
+            - generic [ref=e298]: Rezerwuj stolik →
+          - generic [ref=e299]:
+            - generic [ref=e300]:
+              - generic [ref=e301]: Ryby
+              - generic [ref=e302]: Owoce morza
+              - generic [ref=e303]: Taras
+            - heading "Restauracja morska" [level=3] [ref=e304]
+            - paragraph [ref=e305]: Gdynia
+            - button "Zobacz demo →" [ref=e306]
+        - generic [ref=e307]:
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - generic [ref=e311]: Sopot
+              - generic [ref=e312]:
+                - generic [ref=e314]: "92"
+                - generic [ref=e316]: "96"
+                - generic [ref=e318]: "98"
+                - generic [ref=e320]: "95"
+            - generic [ref=e338]: Rezerwuj stolik →
+          - generic [ref=e339]:
+            - generic [ref=e340]:
+              - generic [ref=e341]: Pierogi
+              - generic [ref=e342]: Żurek
+              - generic [ref=e343]: Sezonowe
+            - heading "Restauracja polska" [level=3] [ref=e344]
+            - paragraph [ref=e345]: Sopot
+            - button "Zobacz demo →" [ref=e346]
+    - generic [ref=e348]:
+      - heading "Trzy kroki. Dwadzieścia minut Twojego czasu." [level=2] [ref=e350]
+      - generic [ref=e353]:
+        - generic [ref=e354]:
+          - generic [ref=e356]:
+            - generic [ref=e357]: "01"
+            - img [ref=e359]
+          - heading "Call 20 min" [level=3] [ref=e362]
+          - paragraph [ref=e363]: Opowiadasz nam o swojej restauracji. Tyle od Ciebie potrzebujemy.
+        - generic [ref=e364]:
+          - generic [ref=e366]:
+            - generic [ref=e367]: "02"
+            - img [ref=e369]
+          - heading "My robimy wszystko" [level=3] [ref=e373]
+          - paragraph [ref=e374]: Zbieramy treści, piszemy, kodujemy, optymalizujemy. Nie potrzebujesz nic robić.
+        - generic [ref=e375]:
+          - generic [ref=e377]:
+            - generic [ref=e378]: "03"
+            - img [ref=e380]
+          - heading "Twoja strona online" [level=3] [ref=e383]
+          - paragraph [ref=e384]: Gotowe w 48 godzin od rozmowy. Możesz sprawdzić.
+    - generic [ref=e386]:
+      - heading "Dlaczego StanAutomation, a nie ktoś inny?" [level=2] [ref=e388]:
+        - text: Dlaczego StanAutomation,
+        - text: a nie ktoś inny?
+      - table [ref=e391]:
+        - rowgroup [ref=e392]:
+          - row "StanAutomation Lokalna agencja Wix / Squarespace" [ref=e393]:
+            - columnheader [ref=e394]
+            - columnheader "StanAutomation" [ref=e395]
+            - columnheader "Lokalna agencja" [ref=e396]
+            - columnheader "Wix / Squarespace" [ref=e397]
+        - rowgroup [ref=e398]:
+          - row "Czas realizacji 48 godzin 2–4 tygodnie Ty robisz sam" [ref=e399]:
+            - cell "Czas realizacji" [ref=e400]
+            - cell "48 godzin" [ref=e401]:
+              - generic [ref=e402]:
+                - img [ref=e403]
+                - generic [ref=e405]: 48 godzin
+            - cell "2–4 tygodnie" [ref=e406]
+            - cell "Ty robisz sam" [ref=e407]
+          - row "Szybkość strony (Google) 90+ Rzadko mierzone 40–70 typowo" [ref=e408]:
+            - cell "Szybkość strony (Google)" [ref=e409]
+            - cell "90+" [ref=e410]:
+              - generic [ref=e411]:
+                - img [ref=e412]
+                - generic [ref=e414]: 90+
+            - cell "Rzadko mierzone" [ref=e415]
+            - cell "40–70 typowo" [ref=e416]
+          - row "Specjalizacja Tylko restauracje Wszystko dla wszystkich Brak" [ref=e417]:
+            - cell "Specjalizacja" [ref=e418]
+            - cell "Tylko restauracje" [ref=e419]:
+              - generic [ref=e420]:
+                - img [ref=e421]
+                - generic [ref=e423]: Tylko restauracje
+            - cell "Wszystko dla wszystkich" [ref=e424]
+            - cell "Brak" [ref=e425]
+          - row "Gwarancja zwrotu 100% Brak Brak" [ref=e426]:
+            - cell "Gwarancja zwrotu" [ref=e427]
+            - cell "100%" [ref=e428]:
+              - generic [ref=e429]:
+                - img [ref=e430]
+                - generic [ref=e432]: 100%
+            - cell "Brak" [ref=e433]
+            - cell "Brak" [ref=e434]
+          - row "AI SEO Wbudowane Rzadko Brak" [ref=e435]:
+            - cell "AI SEO" [ref=e436]
+            - cell "Wbudowane" [ref=e437]:
+              - generic [ref=e438]:
+                - img [ref=e439]
+                - generic [ref=e441]: Wbudowane
+            - cell "Rzadko" [ref=e442]
+            - cell "Brak" [ref=e443]
+          - row "Czas właściciela 20 minut Tygodnie spotkań Godziny / dni" [ref=e444]:
+            - cell "Czas właściciela" [ref=e445]
+            - cell "20 minut" [ref=e446]:
+              - generic [ref=e447]:
+                - img [ref=e448]
+                - generic [ref=e450]: 20 minut
+            - cell "Tygodnie spotkań" [ref=e451]
+            - cell "Godziny / dni" [ref=e452]
+          - row "Subskrypcja Od 29 PLN Brak / drogie 50–200 PLN bez specjalizacji" [ref=e453]:
+            - cell "Subskrypcja" [ref=e454]
+            - cell "Od 29 PLN" [ref=e455]:
+              - generic [ref=e456]:
+                - img [ref=e457]
+                - generic [ref=e459]: Od 29 PLN
+            - cell "Brak / drogie" [ref=e460]
+            - cell "50–200 PLN bez specjalizacji" [ref=e461]
+          - row "Wybierz nas →" [ref=e462]:
+            - cell [ref=e463]
+            - cell "Wybierz nas →" [ref=e464]:
+              - link "Wybierz nas →" [ref=e466] [cursor=pointer]:
+                - /url: "#demo"
+            - cell [ref=e467]
+            - cell [ref=e468]
+    - generic [ref=e470]:
+      - generic [ref=e471]:
+        - generic [ref=e472]: Cennik
+        - heading "Proste ceny. Żadnych niespodzianek." [level=2] [ref=e473]:
+          - text: Proste ceny.
+          - text: Żadnych niespodzianek.
+      - paragraph [ref=e475]:
+        - strong [ref=e476]: 1 pusty stolik wieczorem = ~150 PLN straty.
+        - text: "W tygodniu: 1 000 PLN. W miesiącu: 4 000 PLN."
+        - text: Nasze plany zaczynają się od 29 PLN miesięcznie.
+      - generic [ref=e477]:
+        - heading "Jednorazowe wdrożenie" [level=3] [ref=e478]
+        - generic [ref=e479]:
+          - generic [ref=e480]:
+            - heading "Starter" [level=3] [ref=e481]
+            - generic [ref=e482]:
+              - text: 2 000–3 500
+              - generic [ref=e483]: PLN jednorazowo
+            - list [ref=e484]:
+              - listitem [ref=e485]:
+                - img [ref=e486]
+                - text: Strona (PL+EN)
+              - listitem [ref=e488]:
+                - img [ref=e489]
+                - text: SEO + AI SEO
+              - listitem [ref=e491]:
+                - img [ref=e492]
+                - text: Managed content
+            - link "Wybierz →" [ref=e494] [cursor=pointer]:
+              - /url: "#kontakt"
+          - generic [ref=e495]:
+            - generic [ref=e496]: Najpopularniejszy
+            - heading "Standard" [level=3] [ref=e497]
+            - generic [ref=e498]:
+              - text: 4 500–6 500
+              - generic [ref=e499]: PLN jednorazowo
+            - list [ref=e500]:
+              - listitem [ref=e501]:
+                - img [ref=e502]
+                - text: Strona + Rezerwacje
+              - listitem [ref=e504]:
+                - img [ref=e505]
+                - text: + Stripe
+              - listitem [ref=e507]:
+                - img [ref=e508]
+                - text: Managed content
+            - link "Wybierz →" [ref=e510] [cursor=pointer]:
+              - /url: "#kontakt"
+          - generic [ref=e511]:
+            - heading "Premium" [level=3] [ref=e512]
+            - generic [ref=e513]:
+              - text: 8 000–10 000
+              - generic [ref=e514]: PLN jednorazowo
+            - list [ref=e515]:
+              - listitem [ref=e516]:
+                - img [ref=e517]
+                - text: Strona + Rezerwacje
+              - listitem [ref=e519]:
+                - img [ref=e520]
+                - text: + CMS panel
+              - listitem [ref=e522]:
+                - img [ref=e523]
+                - text: Klient edytuje sam
+            - link "Wybierz →" [ref=e525] [cursor=pointer]:
+              - /url: "#kontakt"
+      - generic [ref=e526]:
+        - generic [ref=e527]:
+          - heading "Abonament miesięczny" [level=3] [ref=e528]
+          - paragraph [ref=e529]: Startuje od dnia oddania strony
+        - generic [ref=e530]:
+          - generic [ref=e531]:
+            - heading "Obecność" [level=3] [ref=e532]
+            - generic [ref=e533]:
+              - text: "29"
+              - generic [ref=e534]: PLN/mies.
+            - list [ref=e535]:
+              - listitem [ref=e536]:
+                - img [ref=e537]
+                - text: Hosting 24/7
+              - listitem [ref=e539]:
+                - img [ref=e540]
+                - text: SSL
+              - listitem [ref=e542]:
+                - img [ref=e543]
+                - text: Monitoring
+              - listitem [ref=e545]:
+                - img [ref=e546]
+                - text: Naprawa błędów
+              - listitem [ref=e548]:
+                - img [ref=e549]
+                - text: "Wartość rynkowa: ~120 PLN"
+            - link "Wybierz →" [ref=e551] [cursor=pointer]:
+              - /url: "#kontakt"
+          - generic [ref=e552]:
+            - generic [ref=e553]: Najpopularniejszy
+            - heading "Wzrost" [level=3] [ref=e554]
+            - generic [ref=e555]:
+              - text: "249"
+              - generic [ref=e556]: PLN/mies.
+            - list [ref=e557]:
+              - listitem [ref=e558]:
+                - img [ref=e559]
+                - text: Wszystko z Obecność
+              - listitem [ref=e561]:
+                - img [ref=e562]
+                - text: 5× aktualizacji/mies.
+              - listitem [ref=e564]:
+                - img [ref=e565]
+                - text: Raport SEO
+              - listitem [ref=e567]:
+                - img [ref=e568]
+                - text: Support 24h
+              - listitem [ref=e570]:
+                - img [ref=e571]
+                - text: Audyt roczny
+              - listitem [ref=e573]:
+                - img [ref=e574]
+                - text: "Wartość rynkowa: ~770 PLN"
+            - link "Wybierz →" [ref=e576] [cursor=pointer]:
+              - /url: "#kontakt"
+          - generic [ref=e577]:
+            - heading "Dominacja" [level=3] [ref=e578]
+            - generic [ref=e579]:
+              - text: "799"
+              - generic [ref=e580]: PLN/mies.
+            - list [ref=e581]:
+              - listitem [ref=e582]:
+                - img [ref=e583]
+                - text: Wszystko z Wzrost
+              - listitem [ref=e585]:
+                - img [ref=e586]
+                - text: Google/Meta Ads
+              - listitem [ref=e588]:
+                - img [ref=e589]
+                - text: Social media
+              - listitem [ref=e591]:
+                - img [ref=e592]
+                - text: Rozmowa strategiczna
+              - listitem [ref=e594]:
+                - img [ref=e595]
+                - text: AI OS (wkrótce)
+              - listitem [ref=e597]:
+                - img [ref=e598]
+                - text: "Wartość rynkowa: ~2 270 PLN"
+            - link "Wybierz →" [ref=e600] [cursor=pointer]:
+              - /url: "#kontakt"
+    - generic [ref=e605]:
+      - generic [ref=e606]:
+        - generic [ref=e607]: Trójmiasto
+        - heading "Znamy Wasze restauracje. Znamy sezonowość. Jesteśmy stąd." [level=2] [ref=e608]:
+          - text: Znamy Wasze restauracje.
+          - text: Znamy sezonowość.
+          - text: Jesteśmy stąd.
+        - paragraph [ref=e609]: Gdańsk, Gdynia, Sopot — rozumiemy czym różni się sezon letni od zimy dla restauracji tutaj. Wiemy że turyści z hoteli szukają na Google Maps. Wiemy że puste stoliki w środę bolą bardziej niż w niedzielę. Dlatego to co budujemy jest dopasowane do Waszych realiów — nie jest ogólnym szablonem.
+      - generic [ref=e611]:
+        - generic [ref=e612]:
+          - generic [ref=e613]:
+            - generic [ref=e615]: Gdańsk
+            - img [ref=e617]
+          - generic [ref=e620]:
+            - generic [ref=e622]: Gdynia
+            - img [ref=e624]
+          - generic [ref=e627]:
+            - generic [ref=e629]: Sopot
+            - img [ref=e631]
+        - generic [ref=e634]:
+          - paragraph [ref=e635]: Zasięg działania
+          - paragraph [ref=e636]: Trójmiasto
+          - paragraph [ref=e637]: i okolice
+    - generic [ref=e641]:
+      - generic [ref=e642]:
+        - heading "Skontaktuj się z nami — odpowiemy w 24 godziny." [level=2] [ref=e643]:
+          - text: Skontaktuj się z nami
+          - text: — odpowiemy w 24 godziny.
+        - paragraph [ref=e644]: Przygotujemy stronę dla Twojej restauracji i wyślemy link. Jeśli się nie spodoba — zero zobowiązań. Jeśli się spodoba — zaczniemy w 48 godzin.
+      - generic [ref=e645]:
+        - link "Email stanislaw@stanautomation.com" [ref=e646] [cursor=pointer]:
+          - /url: mailto:stanislaw@stanautomation.com
+          - img [ref=e648]
+          - generic [ref=e650]:
+            - paragraph [ref=e651]: Email
+            - paragraph [ref=e652]: stanislaw@stanautomation.com
+        - link "Telefon +48 505 753 683" [ref=e653] [cursor=pointer]:
+          - /url: tel:+48505753683
+          - img [ref=e655]
+          - generic [ref=e657]:
+            - paragraph [ref=e658]: Telefon
+            - paragraph [ref=e659]: +48 505 753 683
+      - generic [ref=e660]:
+        - generic [ref=e661]:
+          - img [ref=e663]
+          - generic [ref=e665]: 100% zwrot
+        - generic [ref=e666]:
+          - img [ref=e668]
+          - generic [ref=e670]: 48h realizacja
+        - generic [ref=e671]:
+          - img [ref=e673]
+          - generic [ref=e676]: Trójmiasto
+        - generic [ref=e677]:
+          - img [ref=e679]
+          - generic [ref=e681]: Dane bezpieczne
+    - generic [ref=e683]:
+      - generic [ref=e684]:
+        - generic [ref=e685]:
+          - link "StanAutomation" [ref=e686] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e687]: Technologiczny partner dla restauracji w Trójmieście.
+        - generic [ref=e688]:
+          - paragraph [ref=e689]: Nawigacja
+          - link "Usługi" [ref=e690] [cursor=pointer]:
+            - /url: "#uslugi"
+          - link "Cennik" [ref=e691] [cursor=pointer]:
+            - /url: "#cennik"
+          - link "Demo" [ref=e692] [cursor=pointer]:
+            - /url: "#demo"
+          - link "Kontakt" [ref=e693] [cursor=pointer]:
+            - /url: "#kontakt"
+        - generic [ref=e694]:
+          - paragraph [ref=e695]: Kontakt
+          - link "kontakt@stanautomation.pl" [ref=e696] [cursor=pointer]:
+            - /url: mailto:kontakt@stanautomation.pl
+          - paragraph [ref=e697]: Gdańsk, Trójmiasto
+      - generic [ref=e698]:
+        - paragraph [ref=e699]: © 2026 StanAutomation · Gdańsk
+        - paragraph [ref=e700]: Strony wyłącznie dla restauracji. Robimy jedną rzecz — i robimy to najlepiej.
+  - button "Open Next.js Dev Tools" [ref=e706] [cursor=pointer]:
+    - img [ref=e707]

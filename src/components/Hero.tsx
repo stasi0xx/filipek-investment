@@ -233,10 +233,10 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <Button as="a" href="#kontakt" variant="primary-inverse">
+            <Button as="a" href="/kontakt" variant="primary-inverse">
               Zapytaj o dostępność domu
             </Button>
-            <Button as="a" href="#oferta" variant="outline-inverse">
+            <Button as="a" href="/oferta" variant="outline-inverse">
               Zobacz ofertę
             </Button>
           </div>

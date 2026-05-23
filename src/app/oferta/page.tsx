@@ -344,6 +344,64 @@ export default function OfertaPage() {
                   minWidth: 280,
                 }}
               >
+                {/* Status badge */}
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 8,
+                    marginBottom: 20,
+                  }}
+                >
+                  <span
+                    style={{
+                      position: "relative",
+                      display: "inline-flex",
+                      width: 8,
+                      height: 8,
+                      flexShrink: 0,
+                    }}
+                  >
+                    <span
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        borderRadius: "50%",
+                        background: "#C9A96E",
+                        animation: "statusPulse 2s ease-out infinite",
+                        opacity: 0,
+                      }}
+                    />
+                    <span
+                      style={{
+                        position: "relative",
+                        display: "block",
+                        width: 8,
+                        height: 8,
+                        borderRadius: "50%",
+                        background: "#C9A96E",
+                      }}
+                    />
+                    <style>{`
+                      @keyframes statusPulse {
+                        0%   { transform: scale(1);   opacity: 0.7; }
+                        100% { transform: scale(2.8); opacity: 0; }
+                      }
+                    `}</style>
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "var(--font-sans)",
+                      fontSize: 10,
+                      fontWeight: 600,
+                      letterSpacing: "0.15em",
+                      textTransform: "uppercase",
+                      color: "#C9A96E",
+                    }}
+                  >
+                    Etap 1 · W trakcie budowy
+                  </span>
+                </div>
                 <div
                   style={{
                     fontFamily: "var(--font-sans)",

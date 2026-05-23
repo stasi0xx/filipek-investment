@@ -1,0 +1,275 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "Filipek INVESTMENT" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e4]: Filipek
+      - generic [ref=e5]: INVESTMENT
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Strona główna" [ref=e8] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e9]:
+        - link "Oferta" [ref=e10] [cursor=pointer]:
+          - /url: /oferta
+      - listitem [ref=e11]:
+        - link "Lokalizacja" [ref=e12] [cursor=pointer]:
+          - /url: /lokalizacja
+      - listitem [ref=e13]:
+        - link "Galeria" [ref=e14] [cursor=pointer]:
+          - /url: /galeria
+      - listitem [ref=e15]:
+        - link "O inwestorze" [ref=e16] [cursor=pointer]:
+          - /url: /inwestor
+      - listitem [ref=e17]:
+        - link "Kontakt" [ref=e18] [cursor=pointer]:
+          - /url: /kontakt
+    - link "Zapytaj o dostępność" [ref=e19] [cursor=pointer]:
+      - /url: "#kontakt"
+  - main [ref=e20]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e28]: Nowy Relax · Etap 1 · Cicibór Duży
+        - heading "Oferta" [level=1] [ref=e30]
+        - paragraph [ref=e32]: Nowy Relax to kameralna inwestycja — 8 domów w zabudowie bliźniaczej w Ciciborze Dużym. Etap 1 obejmuje 4 domy, każdy z garażem w bryle budynku, własnym ogrodem i przemyślanym układem dla rodziny.
+        - generic [ref=e34]:
+          - link "Zapytaj o dostępność domu" [ref=e35] [cursor=pointer]:
+            - /url: /#kontakt
+          - link "Układ i standard" [ref=e36] [cursor=pointer]:
+            - /url: "#układ"
+      - generic [ref=e38]:
+        - generic [ref=e39]: Cena domu · Etap 1
+        - generic [ref=e40]: 630 000 zł
+        - generic [ref=e41]: brutto · standard deweloperski+
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: 121,87 m²
+            - generic [ref=e45]: powierzchni domu
+          - generic [ref=e46]:
+            - generic [ref=e47]: ok. 450 m²
+            - generic [ref=e48]: działka przy domu
+          - generic [ref=e49]:
+            - generic [ref=e50]: garaż
+            - generic [ref=e51]: w bryle budynku
+          - generic [ref=e52]:
+            - generic [ref=e53]: 0 zł PCC
+            - generic [ref=e54]: oszczędność ok. 12 600 zł
+    - generic [ref=e56]:
+      - generic [ref=e58]: Parametry domu
+      - generic [ref=e59]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: 121,87 m²
+          - generic [ref=e64]: powierzchnia domu
+        - generic [ref=e66]:
+          - generic [ref=e67]: ok. 450 m²
+          - generic [ref=e69]: działka przy domu
+        - generic [ref=e71]:
+          - generic [ref=e72]: 3 pokoje
+          - generic [ref=e73]:
+            - generic [ref=e74]: na 1. piętrze
+            - generic [ref=e75]: w tym sypialnia z garderobą
+        - generic [ref=e77]:
+          - generic [ref=e78]: 3 łazienki
+          - generic [ref=e79]:
+            - generic [ref=e80]: w domu
+            - generic [ref=e81]: 2 na piętrze + 1 na parterze
+        - generic [ref=e84]:
+          - generic [ref=e85]: garaż 21,97 m²
+          - generic [ref=e86]:
+            - generic [ref=e87]: w bryle budynku
+            - generic [ref=e88]: wejście bezpośrednio z domu
+        - generic [ref=e90]:
+          - generic [ref=e91]: 0 zł PCC
+          - generic [ref=e92]:
+            - generic [ref=e93]: podatku do zapłaty
+            - generic [ref=e94]: oszczędność ok. 12 600 zł
+        - generic [ref=e96]:
+          - generic [ref=e97]: marzec 2027
+          - generic [ref=e99]: planowane zakończenie robót
+    - generic [ref=e102]:
+      - generic [ref=e104]: Co kupujesz?
+      - heading "Dom z własnym ogrodem i garażem" [level=2] [ref=e106]
+      - paragraph [ref=e108]: "W Etapie 1 dostępne są 4 domy w zabudowie bliźniaczej, każdy o powierzchni 121,87 m², z garażem w bryle budynku oraz działką ok. 450 m². Każdy dom ma ten sam, funkcjonalny układ: część dzienną na parterze oraz prywatną strefę sypialni na 1. piętrze."
+      - paragraph [ref=e110]: W zależności od położenia w budynku układ domu występuje w odbiciu lustrzanym. Dodatkowym atutem jest przestrzeń strychowa — praktyczne miejsce na rzeczy sezonowe, walizki czy sprzęt sportowy.
+      - paragraph [ref=e112]: Formalnie przedmiotem sprzedaży jest lokal mieszkalny w zabudowie bliźniaczej wraz z przynależną działką.
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e123]: Układ domu
+        - heading "Dwie strefy — codzienna i prywatna" [level=2] [ref=e125]
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - button "Parter" [ref=e129] [cursor=pointer]
+            - button "1. piętro" [ref=e130] [cursor=pointer]
+          - paragraph [ref=e131]: Wygodna strefa dzienna z salonem, jadalnią, kuchnią, łazienką, spiżarką, przedsionkiem i garażem w bryle budynku.
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]: Przedsionek
+              - generic [ref=e135]: 4,26 m²
+            - generic [ref=e136]:
+              - generic [ref=e137]: Łazienka
+              - generic [ref=e138]: 3,47 m²
+            - generic [ref=e139]:
+              - generic [ref=e140]: Spiżarka
+              - generic [ref=e141]: 1,67 m²
+            - generic [ref=e142]:
+              - generic [ref=e143]: Kuchnia
+              - generic [ref=e144]: 12,09 m²
+            - generic [ref=e145]:
+              - generic [ref=e146]: Salon + jadalnia
+              - generic [ref=e147]: 24,00 m²
+            - generic [ref=e148]:
+              - generic [ref=e149]: Garaż
+              - generic [ref=e150]: 21,97 m²
+          - generic [ref=e151]:
+            - generic [ref=e152]: "Razem parter (bez garażu: 45,49 m²)"
+            - generic [ref=e153]: 67,46 m²
+        - img "Rzut kondygnacji" [ref=e156]
+    - generic [ref=e158]:
+      - generic [ref=e159]:
+        - generic [ref=e161]: Standard deweloperski+
+        - heading "Więcej niż podstawowy stan deweloperski" [level=2] [ref=e163]
+        - paragraph [ref=e165]: Po odbiorze nie zaczynasz od porządkowania placu budowy. Otrzymujesz dom z gotową elewacją, ogrodzeniem, podjazdem, tarasem i uporządkowanym terenem wokół budynku.
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - button "8 elementów Konstrukcja i budynek +" [ref=e169] [cursor=pointer]:
+            - generic [ref=e170]:
+              - generic [ref=e171]: 8 elementów
+              - generic [ref=e172]: Konstrukcja i budynek
+            - generic [ref=e173]: +
+          - generic [ref=e174]:
+            - generic [ref=e175]: Ławy i fundamenty żelbetowe
+            - generic [ref=e177]: Mury nośne Solbet 24 cm
+            - generic [ref=e179]: Dach pokryty blachodachówką
+            - generic [ref=e181]: Ocieplenie dachu wraz z pokryciem płytami GK
+            - generic [ref=e183]: Elewacja z ociepleniem styropianem grafitowym
+            - generic [ref=e185]: Stolarka okienna PCV trzyszybowa
+            - generic [ref=e187]: Drzwi zewnętrzne
+            - generic [ref=e189]: Brama garażowa
+        - generic [ref=e191]:
+          - button "8 elementów Instalacje i komfort +" [expanded] [ref=e192] [cursor=pointer]:
+            - generic [ref=e193]:
+              - generic [ref=e194]: 8 elementów
+              - generic [ref=e195]: Instalacje i komfort
+            - generic [ref=e196]: +
+          - generic [ref=e198]:
+            - generic [ref=e199]: Instalacja elektryczna
+            - generic [ref=e201]: Instalacja multimedialna / IT
+            - generic [ref=e203]: Instalacje sanitarne wodno-kanalizacyjne
+            - generic [ref=e205]: Powietrzna pompa ciepła
+            - generic [ref=e207]: Rekuperacja
+            - generic [ref=e209]: Ogrzewanie podłogowe
+            - generic [ref=e211]: Woda z sieci gminnej
+            - generic [ref=e213]: Odprowadzenie ścieków do kanalizacji
+        - generic [ref=e215]:
+          - button "3 elementów Wykończenie wewnętrzne +" [ref=e216] [cursor=pointer]:
+            - generic [ref=e217]:
+              - generic [ref=e218]: 3 elementów
+              - generic [ref=e219]: Wykończenie wewnętrzne
+            - generic [ref=e220]: +
+          - generic [ref=e221]:
+            - generic [ref=e222]: Tynki wewnętrzne gipsowe
+            - generic [ref=e224]: Posadzki betonowe
+            - generic [ref=e226]: Przygotowanie pomieszczeń do dalszych prac wykończeniowych
+        - generic [ref=e228]:
+          - button "5 elementów Teren wokół domu +" [ref=e229] [cursor=pointer]:
+            - generic [ref=e230]:
+              - generic [ref=e231]: 5 elementów
+              - generic [ref=e232]: Teren wokół domu
+            - generic [ref=e233]: +
+          - generic [ref=e234]:
+            - generic [ref=e235]: Ogrodzenie panelowe działki
+            - generic [ref=e237]: Podjazd utwardzony kostką brukową
+            - generic [ref=e239]: Opaska wokół budynku
+            - generic [ref=e241]: Taras utwardzony kostką brukową
+            - generic [ref=e243]: Teren uporządkowany i obsiany trawą
+    - generic [ref=e247]:
+      - generic [ref=e248]:
+        - generic [ref=e250]: Cena
+        - generic [ref=e252]: 630 000 zł
+        - generic [ref=e254]: brutto · cena obowiązuje w Etapie 1
+        - paragraph [ref=e256]: Cena obejmuje dom o powierzchni 121,87 m², garaż w bryle budynku, działkę ok. 450 m² oraz pełny standard deweloperski+ opisany w ofercie.
+        - link "Zapytaj o aktualną dostępność" [ref=e258] [cursor=pointer]:
+          - /url: /#kontakt
+      - generic [ref=e260]:
+        - generic [ref=e261]: Oszczędność na podatku PCC
+        - generic [ref=e262]: 0 zł PCC
+        - paragraph [ref=e263]:
+          - text: Kupujący nie płaci podatku PCC — zakup odbywa się od dewelopera. Przy cenie 630 000 zł to oszczędność
+          - strong [ref=e264]: ok. 12 600 zł
+          - text: względem zakupu z rynku wtórnego.
+        - generic [ref=e265]: Sprzedaż z wykorzystaniem mieszkaniowego rachunku powierniczego. Możliwość finansowania kredytem hipotecznym.
+    - generic [ref=e267]:
+      - generic [ref=e268]:
+        - generic [ref=e270]: Rezerwacja i zakup
+        - heading "Jak wygląda proces zakupu?" [level=2] [ref=e272]
+      - generic [ref=e273]:
+        - generic [ref=e275]:
+          - generic [ref=e276]: "01"
+          - generic [ref=e277]: Kontakt i rozmowa
+          - paragraph [ref=e278]: Odpowiadamy na pytania dotyczące inwestycji, dostępnych domów, standardu, terminu realizacji i możliwości finansowania.
+        - generic [ref=e280]:
+          - generic [ref=e281]: "02"
+          - generic [ref=e282]: Rezerwacja domu
+          - paragraph [ref=e283]: Wybrany dom można zarezerwować na podstawie umowy rezerwacyjnej i wpłaty zaliczki.
+        - generic [ref=e285]:
+          - generic [ref=e286]: "03"
+          - generic [ref=e287]: Umowa i rachunek powierniczy
+          - paragraph [ref=e288]: Sprzedaż prowadzona z wykorzystaniem mieszkaniowego rachunku powierniczego dla bezpieczeństwa transakcji.
+        - generic [ref=e290]:
+          - generic [ref=e291]: "04"
+          - generic [ref=e292]: Finansowanie
+          - paragraph [ref=e293]: Zakup można finansować kredytem hipotecznym. Na życzenie pomagamy w kontakcie ze sprawdzonymi partnerami kredytowymi.
+        - generic [ref=e295]:
+          - generic [ref=e296]: "05"
+          - generic [ref=e297]: Realizacja i odbiór
+          - paragraph [ref=e298]: Planowany termin zakończenia robót to marzec 2027.
+    - generic [ref=e300]:
+      - generic [ref=e302]: Etap 1 · 4 domy dostępne
+      - generic [ref=e303]:
+        - generic [ref=e305]:
+          - generic [ref=e306]: Chcesz zobaczyć dokładny układ domu?
+          - paragraph [ref=e307]: Poproś o kartę domu z rzutami, tabelą pomieszczeń, standardem i podstawowymi informacjami o ofercie.
+          - link "Poproś o kartę domu" [ref=e309] [cursor=pointer]:
+            - /url: /#kontakt
+        - generic [ref=e311]:
+          - generic [ref=e312]: Zapytaj o dom w Etapie 1
+          - paragraph [ref=e313]: Skontaktuj się, aby sprawdzić aktualną dostępność, poznać szczegóły rezerwacji i umówić prezentację inwestycji.
+          - generic [ref=e314]:
+            - link "Zapytaj o dostępność domu" [ref=e315] [cursor=pointer]:
+              - /url: /#kontakt
+            - link "Umów prezentację inwestycji →" [ref=e316] [cursor=pointer]:
+              - /url: /#kontakt
+  - contentinfo [ref=e317]:
+    - generic [ref=e318]:
+      - generic [ref=e319]:
+        - generic [ref=e320]:
+          - generic [ref=e321]: Nowy Relax
+          - text: Inwestycja Filipek Investment Sp. z o.o.
+        - paragraph [ref=e322]: Dom to więcej niż adres. To początek historii.
+      - generic [ref=e323]:
+        - generic [ref=e324]: Nawigacja
+        - generic [ref=e325]:
+          - link "Strona główna" [ref=e326] [cursor=pointer]:
+            - /url: "#"
+          - link "Oferta" [ref=e327] [cursor=pointer]:
+            - /url: "#"
+          - link "Lokalizacja" [ref=e328] [cursor=pointer]:
+            - /url: "#"
+          - link "Galeria" [ref=e329] [cursor=pointer]:
+            - /url: "#"
+          - link "O inwestorze" [ref=e330] [cursor=pointer]:
+            - /url: "#"
+          - link "Kontakt" [ref=e331] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e332]:
+        - generic [ref=e333]: Kontakt
+        - generic [ref=e334]:
+          - link "+48 692 404 796" [ref=e335] [cursor=pointer]:
+            - /url: tel:+48692404796
+          - link "nowyrelax@fi-invest.pl" [ref=e336] [cursor=pointer]:
+            - /url: mailto:nowyrelax@fi-invest.pl
+    - generic [ref=e337]:
+      - paragraph [ref=e338]: Materiały zamieszczone na stronie mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego. Szczegółowe warunki sprzedaży, standard wykonania oraz aktualna dostępność domów są potwierdzane indywidualnie z zainteresowanymi klientami.
+      - paragraph [ref=e339]: © 2026 Filipek Investment Sp. z o.o. Wszystkie prawa zastrzeżone.
+  - button "Open Next.js Dev Tools" [ref=e345] [cursor=pointer]:
+    - img [ref=e346]
