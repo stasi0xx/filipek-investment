@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "/", label: "Strona główna" },
@@ -70,37 +71,25 @@ export default function Nav() {
           transition: "transform 350ms var(--ease-out-quart), background 300ms, box-shadow 300ms, backdrop-filter 300ms",
         }}
       >
-        {/* Wordmark */}
+        {/* Logo */}
         <a
           href="/"
           onClick={() => setOpen(false)}
-          style={{ display: "flex", alignItems: "baseline", gap: 10, textDecoration: "none", marginLeft: "10px" }}
+          style={{ display: "flex", alignItems: "center", textDecoration: "none", marginLeft: "10px" }}
         >
-          <span
+          <Image
+            src="/assets/logo-poziom.png"
+            alt="Filipek Investment"
+            width={160}
+            height={44}
             style={{
-              fontFamily: "var(--font-serif)",
-              fontSize: 28,
-              fontWeight: 400,
-              color: inkColor,
-              letterSpacing: "-0.01em",
-              transition: "color 300ms",
+              height: 44,
+              width: "auto",
+              filter: scrolled || open ? "none" : "brightness(0) invert(1)",
+              transition: "filter 300ms",
             }}
-          >
-            Filipek
-          </span>
-          <span
-            style={{
-              fontFamily: "var(--font-sans)",
-              fontSize: 11,
-              fontWeight: 600,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              color: inkColor,
-              transition: "color 300ms",
-            }}
-          >
-            INVESTMENT
-          </span>
+            priority
+          />
         </a>
 
         {/* Desktop links */}
@@ -132,7 +121,7 @@ export default function Nav() {
 
         {/* Desktop CTA */}
         <a
-          href="#kontakt"
+          href="/kontakt"
           className="hidden md:inline-block"
           style={{
             fontFamily: "var(--font-sans)",
@@ -270,7 +259,7 @@ export default function Nav() {
             }}
           >
             <a
-              href="#kontakt"
+              href="/kontakt"
               onClick={() => setOpen(false)}
               style={{
                 display: "inline-block",
