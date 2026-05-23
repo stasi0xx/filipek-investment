@@ -42,6 +42,7 @@ export default function InwestorPage() {
 
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section
+          className="inv-hero-section"
           style={{
             position: "relative",
             background: "var(--surface-ink)",
@@ -67,6 +68,7 @@ export default function InwestorPage() {
               align-items: flex-end;
             }
             @media (max-width: 1100px) {
+              .inv-hero-section { padding-top: 88px; }
               .inv-hero-inner {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -74,7 +76,9 @@ export default function InwestorPage() {
               }
             }
             @media (max-width: 600px) {
-              .inv-hero-inner { padding: 0 20px; }
+              .inv-hero-section { padding-top: 80px; }
+              .inv-hero-inner { padding: 0 20px; gap: 28px; }
+              .inv-stats-card { padding: 28px 24px !important; }
             }
           `}</style>
 
@@ -170,6 +174,7 @@ export default function InwestorPage() {
             {/* Right: stats card */}
             <Reveal delay={0.22}>
               <div
+                className="inv-stats-card"
                 style={{
                   background: "rgba(250,247,242,0.07)",
                   backdropFilter: "blur(24px) saturate(130%)",
@@ -461,12 +466,15 @@ export default function InwestorPage() {
               border-radius: var(--radius-lg);
               overflow: hidden;
             }
+            .inv-pillars-grid > * { height: 100%; }
             .inv-pillar {
               background: var(--surface-ink);
               padding: 44px 36px 48px;
               display: flex;
               flex-direction: column;
               gap: 20px;
+              height: 100%;
+              box-sizing: border-box;
             }
             @media (max-width: 1100px) {
               .inv-pillars-header {

@@ -289,6 +289,7 @@ export default function KontaktPage() {
 
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section
+          className="ktk-hero-section"
           style={{
             position: "relative",
             background: "var(--surface-ink)",
@@ -314,6 +315,7 @@ export default function KontaktPage() {
               align-items: flex-end;
             }
             @media (max-width: 1100px) {
+              .ktk-hero-section { padding-top: 88px; }
               .ktk-hero-inner {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -321,7 +323,9 @@ export default function KontaktPage() {
               }
             }
             @media (max-width: 600px) {
-              .ktk-hero-inner { padding: 0 20px; }
+              .ktk-hero-section { padding-top: 80px; }
+              .ktk-hero-inner { padding: 0 20px; gap: 28px; }
+              .ktk-contact-card { padding: 28px 24px !important; }
             }
           `}</style>
 
@@ -403,6 +407,7 @@ export default function KontaktPage() {
             {/* Right: contact card */}
             <Reveal delay={0.18}>
               <div
+                className="ktk-contact-card"
                 style={{
                   background: "rgba(250,247,242,0.07)",
                   backdropFilter: "blur(24px) saturate(130%)",

@@ -201,6 +201,7 @@ export default function OfertaPage() {
 
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section
+          className="oferta-hero-section"
           style={{
             position: "relative",
             background: "var(--surface-ink)",
@@ -227,14 +228,17 @@ export default function OfertaPage() {
               flex-wrap: wrap;
             }
             @media (max-width: 900px) {
+              .oferta-hero-section { padding-top: 88px; }
               .oferta-hero-inner {
                 padding: 0 24px;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: stretch;
               }
             }
             @media (max-width: 600px) {
-              .oferta-hero-inner { padding: 0 20px; }
+              .oferta-hero-section { padding-top: 80px; }
+              .oferta-hero-inner { padding: 0 20px; gap: 28px; }
+              .oferta-price-card { padding: 28px 24px !important; min-width: 0 !important; }
             }
           `}</style>
 
@@ -329,6 +333,7 @@ export default function OfertaPage() {
             {/* Frosted price card */}
             <Reveal delay={0.22}>
               <div
+                className="oferta-price-card"
                 style={{
                   background: "rgba(250,247,242,0.07)",
                   backdropFilter: "blur(24px) saturate(130%)",
@@ -417,7 +422,7 @@ export default function OfertaPage() {
         </section>
 
         {/* ── 2. PARAMETRY DOMU ────────────────────────────────────────────── */}
-        <section style={{ background: "var(--surface-canvas)", padding: "120px 48px" }}>
+        <section className="params-section" style={{ background: "var(--surface-canvas)", padding: "120px 48px" }}>
           <style>{`
             .params-inner { max-width: 1440px; margin: 0 auto; }
             .params-grid {

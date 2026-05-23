@@ -229,7 +229,7 @@ export default function Nav() {
           WebkitBackdropFilter: "blur(20px) saturate(140%)",
           boxShadow: open ? "0 8px 32px rgba(0,0,0,0.10)" : "none",
           overflow: "hidden",
-          maxHeight: open ? "400px" : "0px",
+          maxHeight: open ? "520px" : "0px",
           transition: "max-height 400ms var(--ease-out-quart), box-shadow 400ms",
         }}
       >

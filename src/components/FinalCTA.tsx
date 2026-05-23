@@ -121,10 +121,10 @@ export default function FinalCTA() {
 
         <Reveal delay={0.24}>
           <div className="fcta-actions">
-            <Button as="a" href="#kontakt" variant="primary-inverse" size="lg">
+            <Button as="a" href="/kontakt" variant="primary-inverse" size="lg">
               Zapytaj o dostępność domu
             </Button>
-            <Button as="a" href="#kontakt" variant="outline-inverse" size="lg">
+            <Button as="a" href="/kontakt" variant="outline-inverse" size="lg">
               Umów prezentację inwestycji
             </Button>
           </div>

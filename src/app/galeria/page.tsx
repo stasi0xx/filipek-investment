@@ -35,6 +35,7 @@ export default function GaleriaPage() {
 
         {/* ── 1. HERO ───────────────────────────────────────────────────── */}
         <section
+          className="gh-hero-section"
           style={{
             position: "relative",
             background: "var(--surface-ink)",
@@ -73,8 +74,14 @@ export default function GaleriaPage() {
               border-color: rgba(250,247,242,0.42);
               color: rgba(250,247,242,0.95);
             }
-            @media (max-width: 900px) { .gh-inner { padding: 0 24px; } }
-            @media (max-width: 600px) { .gh-inner { padding: 0 20px; } }
+            @media (max-width: 900px) {
+              .gh-hero-section { padding-top: 88px; }
+              .gh-inner { padding: 0 24px; }
+            }
+            @media (max-width: 600px) {
+              .gh-hero-section { padding-top: 80px; }
+              .gh-inner { padding: 0 20px; }
+            }
           `}</style>
 
           <div

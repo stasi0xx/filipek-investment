@@ -8,20 +8,19 @@ export default function LokalizacjaBanner() {
       <style>{`
         .lok-banner-section {
           position: relative;
-          background: var(--surface-ink);
+          background-color: var(--surface-ink);
+          background-image: url(/assets/facade-grey.jpeg);
+          background-size: cover;
+          background-position: center 30%;
+          background-attachment: fixed;
           padding: 160px 48px;
           text-align: center;
-          overflow: hidden;
         }
         .lok-banner-bg {
           position: absolute;
           inset: 0;
-          background-image: url(/assets/facade-grey.jpeg);
-          background-size: cover;
-          background-position: center 30%;
-          opacity: 0.14;
-          transform: scale(1.04);
-          transition: opacity 1s ease;
+          background: var(--surface-ink);
+          opacity: 0.86;
         }
         .lok-banner-inner {
           position: relative;
@@ -57,6 +56,7 @@ export default function LokalizacjaBanner() {
         @media (max-width: 600px) {
           .lok-banner-section {
             padding: 100px 24px;
+            background-attachment: scroll;
           }
         }
       `}</style>
@@ -122,7 +122,7 @@ export default function LokalizacjaBanner() {
         </Reveal>
 
         <Reveal delay={0.24}>
-          <a href="#lokalizacja" className="lok-banner-cta">
+          <a href="/lokalizacja" className="lok-banner-cta">
             Zobacz lokalizację
           </a>
         </Reveal>

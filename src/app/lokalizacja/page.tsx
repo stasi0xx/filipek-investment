@@ -42,6 +42,7 @@ export default function LokalizacjaPage() {
 
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section
+          className="lok-hero-section"
           style={{
             position: "relative",
             background: "var(--surface-ink)",
@@ -68,14 +69,17 @@ export default function LokalizacjaPage() {
               flex-wrap: wrap;
             }
             @media (max-width: 900px) {
+              .lok-hero-section { padding-top: 88px; }
               .lok-hero-inner {
                 padding: 0 24px;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: stretch;
               }
             }
             @media (max-width: 600px) {
-              .lok-hero-inner { padding: 0 20px; }
+              .lok-hero-section { padding-top: 80px; }
+              .lok-hero-inner { padding: 0 20px; gap: 28px; }
+              .lok-badge-card { padding: 28px 24px !important; min-width: 0 !important; }
             }
           `}</style>
 
@@ -171,6 +175,7 @@ export default function LokalizacjaPage() {
             {/* Right — location badge */}
             <Reveal delay={0.22}>
               <div
+                className="lok-badge-card"
                 style={{
                   background: "rgba(250,247,242,0.07)",
                   backdropFilter: "blur(24px) saturate(130%)",
