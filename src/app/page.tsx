@@ -3,6 +3,11 @@ import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
 import VideoScroll from "@/components/VideoScroll";
 import About from "@/components/About";
+import DomOpis from "@/components/DomOpis";
+import DlaczegoNowyRelax from "@/components/DlaczegoNowyRelax";
+import LokalizacjaBanner from "@/components/LokalizacjaBanner";
+import PoznajInwestora from "@/components/PoznajInwestora";
+import FinalCTA from "@/components/FinalCTA";
 import Gallery from "@/components/Gallery";
 import Dom from "@/components/Dom";
 import Etapy from "@/components/Etapy";
@@ -21,10 +26,11 @@ export default function Home() {
         <StatsBar />
         <VideoScroll />
         <About />
-        <Gallery />
-        <Dom />
-        <Lokalizacja />
-        <Kontakt />
+        <DomOpis />
+        <DlaczegoNowyRelax />
+        <LokalizacjaBanner />
+        <PoznajInwestora />
+        <FinalCTA />
       </main>
       <Footer />
     </>

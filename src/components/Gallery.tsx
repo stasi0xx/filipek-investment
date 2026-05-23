@@ -5,10 +5,10 @@ import Reveal from "./Reveal";
 import RevealImage from "./RevealImage";
 
 const imgs = [
-  "/assets/hero-nowy-relax.jpeg",
-  "/assets/exterior-1.jpeg",
-  "/assets/interior-1.jpeg",
-  "/assets/facade-grey.jpeg",
+  "/assets/render-jasny-front-zloty.jpeg",
+  "/assets/render-ciemny-front-prawy-dzien.jpeg",
+  "/assets/render-jasny-ogrod-tyl.jpeg",
+  "/assets/render-ciemny-front-burza-noc.jpeg",
 ];
 
 const imgStyle = (src: string, hovered: boolean) => ({

@@ -1,20 +1,40 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
-  { href: "#about", label: "Inwestycja" },
-  { href: "#dom", label: "Dom" },
-  { href: "#etapy", label: "Dostępność" },
-  { href: "#lokalizacja", label: "Lokalizacja" },
+  { href: "/", label: "Strona główna" },
+  { href: "/oferta", label: "Oferta" },
+  { href: "/lokalizacja", label: "Lokalizacja" },
+  { href: "/galeria", label: "Galeria" },
+  { href: "/inwestor", label: "O inwestorze" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [open, setOpen] = useState(false);
+  const lastY = useRef(0);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 64);
+    const onScroll = () => {
+      const y = window.scrollY;
+      const delta = y - lastY.current;
+
+      setScrolled(y > 64);
+
+      if (Math.abs(delta) > 4) {
+        if (delta > 0 && y > 100) {
+          setHidden(true);
+          setOpen(false);
+        } else {
+          setHidden(false);
+        }
+      }
+
+      lastY.current = y;
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -46,12 +66,13 @@ export default function Nav() {
           backdropFilter: scrolled || open ? "blur(20px) saturate(140%)" : "none",
           WebkitBackdropFilter: scrolled || open ? "blur(20px) saturate(140%)" : "none",
           boxShadow: scrolled || open ? "inset 0 -1px 0 var(--line-hair)" : "none",
-          transition: "all 300ms var(--ease-out-quart)",
+          transform: hidden ? "translateY(-100%)" : "translateY(0)",
+          transition: "transform 350ms var(--ease-out-quart), background 300ms, box-shadow 300ms, backdrop-filter 300ms",
         }}
       >
         {/* Wordmark */}
         <a
-          href="#hero"
+          href="/"
           onClick={() => setOpen(false)}
           style={{ display: "flex", alignItems: "baseline", gap: 10, textDecoration: "none", marginLeft: "10px" }}
         >
@@ -132,7 +153,7 @@ export default function Nav() {
             ((e.currentTarget as HTMLElement).style.background = "var(--surface-ink)")
           }
         >
-          Umów wizytę
+          Zapytaj o dostępność
         </a>
 
         {/* Hamburger button — mobile only */}
@@ -263,7 +284,7 @@ export default function Nav() {
                 textDecoration: "none",
               }}
             >
-              Umów wizytę
+              Zapytaj o dostępność
             </a>
           </li>
         </ul>

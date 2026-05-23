@@ -1,31 +1,12 @@
 "use client";
 
-const navSections = [
-  ["Inwestycja", ["Nowy Relax", "Dom 122 m²", "Dostępność", "Lokalizacja"]],
-  ["Firma",      ["O nas", "Realizacje", "Kontakt"]],
-] as const;
-
-const socials = [
-  {
-    label: "Instagram",
-    href: "#",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-        <circle cx="12" cy="12" r="4"/>
-        <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
-      </svg>
-    ),
-  },
-  {
-    label: "Facebook",
-    href: "#",
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-      </svg>
-    ),
-  },
+const navLinks = [
+  "Strona główna",
+  "Oferta",
+  "Lokalizacja",
+  "Galeria",
+  "O inwestorze",
+  "Kontakt",
 ];
 
 export default function Footer() {
@@ -42,20 +23,15 @@ export default function Footer() {
           max-width: 1440px;
           margin: 0 auto;
           display: grid;
-          grid-template-columns: 2fr 1fr 1fr 1fr;
+          grid-template-columns: 2fr 1fr 1fr;
           gap: 64px;
           margin-bottom: 72px;
         }
         .footer-bottom {
+          max-width: 1440px;
+          margin: 0 auto;
           border-top: 1px solid var(--line-dark);
           padding-top: 32px;
-          display: flex;
-          justify-content: space-between;
-          font-family: var(--font-sans);
-          font-size: 12px;
-          color: var(--ink-tertiary);
-          flex-wrap: wrap;
-          gap: 16px;
         }
         @media (max-width: 768px) {
           .footer-grid {
@@ -75,43 +51,35 @@ export default function Footer() {
           .footer-brand {
             grid-column: auto;
           }
-          .footer-bottom {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
-          }
         }
       `}</style>
+
       <div className="footer-grid">
         {/* Brand */}
         <div className="footer-brand">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-              gap: 10,
-              marginBottom: 24,
-            }}
-          >
+          <div style={{ marginBottom: 8 }}>
             <span
               style={{
                 fontFamily: "var(--font-serif)",
-                fontSize: 36,
+                fontSize: "clamp(28px, 4vw, 40px)",
                 letterSpacing: "-0.01em",
+                display: "block",
+                lineHeight: 1.1,
               }}
             >
-              Filipek
+              Nowy Relax
             </span>
             <span
               style={{
                 fontFamily: "var(--font-sans)",
                 fontSize: 11,
                 fontWeight: 600,
-                letterSpacing: "0.18em",
+                letterSpacing: "0.16em",
                 textTransform: "uppercase",
+                color: "var(--brand-sand)",
               }}
             >
-              INVESTMENT
+              Inwestycja Filipek Investment Sp. z o.o.
             </span>
           </div>
           <p
@@ -120,55 +88,15 @@ export default function Footer() {
               fontSize: 15,
               lineHeight: 1.65,
               color: "var(--ink-inverse-secondary)",
-              maxWidth: "38ch",
+              maxWidth: "36ch",
+              marginTop: 20,
             }}
           >
-            Budujemy domy, w których zaczynają się historie rodzin. Cicibór Duży, woj. lubelskie.
+            Dom to więcej niż adres. To początek historii.
           </p>
         </div>
 
-        {/* Link columns */}
-        {navSections.map(([title, links]) => (
-          <div key={title}>
-            <div
-              style={{
-                fontFamily: "var(--font-sans)",
-                fontSize: 11,
-                letterSpacing: "0.14em",
-                textTransform: "uppercase",
-                color: "var(--brand-sand)",
-                marginBottom: 20,
-              }}
-            >
-              {title}
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {links.map((l: string) => (
-                <a
-                  key={l}
-                  href="#"
-                  style={{
-                    fontFamily: "var(--font-sans)",
-                    fontSize: 14,
-                    color: "var(--ink-inverse)",
-                    textDecoration: "none",
-                    transition: "color var(--dur-base)",
-                  }}
-                  onMouseEnter={(e) =>
-                    ((e.currentTarget as HTMLElement).style.color = "var(--brand-sand)")
-                  }
-                  onMouseLeave={(e) =>
-                    ((e.currentTarget as HTMLElement).style.color = "var(--ink-inverse)")
-                  }
-                >
-                  {l}
-                </a>
-              ))}
-            </div>
-          </div>
-        ))}
-
-        {/* Socials column */}
+        {/* Nav */}
         <div>
           <div
             style={{
@@ -180,19 +108,19 @@ export default function Footer() {
               marginBottom: 20,
             }}
           >
-            Socials
+            Nawigacja
           </div>
-          <div style={{ display: "flex", flexDirection: "row", gap: 16 }}>
-            {socials.map((s) => (
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {navLinks.map((l) => (
               <a
-                key={s.label}
-                href={s.href}
-                aria-label={s.label}
+                key={l}
+                href="#"
                 style={{
+                  fontFamily: "var(--font-sans)",
+                  fontSize: 14,
                   color: "var(--ink-inverse)",
                   textDecoration: "none",
                   transition: "color var(--dur-base)",
-                  display: "flex",
                 }}
                 onMouseEnter={(e) =>
                   ((e.currentTarget as HTMLElement).style.color = "var(--brand-sand)")
@@ -201,49 +129,91 @@ export default function Footer() {
                   ((e.currentTarget as HTMLElement).style.color = "var(--ink-inverse)")
                 }
               >
-                {s.icon}
+                {l}
               </a>
             ))}
+          </div>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <div
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontSize: 11,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              color: "var(--brand-sand)",
+              marginBottom: 20,
+            }}
+          >
+            Kontakt
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            <a
+              href="tel:+48692404796"
+              style={{
+                fontFamily: "var(--font-sans)",
+                fontSize: 14,
+                color: "var(--ink-inverse)",
+                textDecoration: "none",
+                transition: "color var(--dur-base)",
+              }}
+              onMouseEnter={(e) =>
+                ((e.currentTarget as HTMLElement).style.color = "var(--brand-sand)")
+              }
+              onMouseLeave={(e) =>
+                ((e.currentTarget as HTMLElement).style.color = "var(--ink-inverse)")
+              }
+            >
+              +48 692 404 796
+            </a>
+            <a
+              href="mailto:nowyrelax@fi-invest.pl"
+              style={{
+                fontFamily: "var(--font-sans)",
+                fontSize: 14,
+                color: "var(--ink-inverse)",
+                textDecoration: "none",
+                transition: "color var(--dur-base)",
+              }}
+              onMouseEnter={(e) =>
+                ((e.currentTarget as HTMLElement).style.color = "var(--brand-sand)")
+              }
+              onMouseLeave={(e) =>
+                ((e.currentTarget as HTMLElement).style.color = "var(--ink-inverse)")
+              }
+            >
+              nowyrelax@fi-invest.pl
+            </a>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <div>© 2026 Filipek Investment. Wszystkie prawa zastrzeżone.</div>
-        <div style={{ display: "flex", gap: 24 }}>
-          <a
-            href="#"
-            style={{
-              color: "var(--ink-tertiary)",
-              textDecoration: "none",
-              transition: "color var(--dur-base)",
-            }}
-            onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "var(--ink-inverse)")
-            }
-            onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "var(--ink-tertiary)")
-            }
-          >
-            Polityka prywatności
-          </a>
-          <a
-            href="#"
-            style={{
-              color: "var(--ink-tertiary)",
-              textDecoration: "none",
-              transition: "color var(--dur-base)",
-            }}
-            onMouseEnter={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "var(--ink-inverse)")
-            }
-            onMouseLeave={(e) =>
-              ((e.currentTarget as HTMLElement).style.color = "var(--ink-tertiary)")
-            }
-          >
-            Regulamin
-          </a>
-        </div>
+        <p
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontSize: 12,
+            lineHeight: 1.7,
+            color: "var(--ink-tertiary)",
+            maxWidth: "90ch",
+          }}
+        >
+          Materiały zamieszczone na stronie mają charakter informacyjny i nie stanowią oferty w
+          rozumieniu Kodeksu cywilnego. Szczegółowe warunki sprzedaży, standard wykonania oraz
+          aktualna dostępność domów są potwierdzane indywidualnie z zainteresowanymi klientami.
+        </p>
+        <p
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontSize: 12,
+            color: "var(--ink-tertiary)",
+            marginTop: 16,
+          }}
+        >
+          © 2026 Filipek Investment Sp. z o.o. Wszystkie prawa zastrzeżone.
+        </p>
       </div>
     </footer>
   );

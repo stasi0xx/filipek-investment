@@ -1,115 +1,175 @@
 "use client";
 
-import { useState } from "react";
 import Reveal from "./Reveal";
-import RevealImage from "./RevealImage";
-
-const pillars = [
-  {
-    eye: "Lokalizacja",
-    title: "1 km do miasta Biała Podlaska",
-    body: "Spokój podmiejskiej natury i autostradowy węzeł Cicibór w zasięgu kilku minut.",
-    img: "/assets/exterior-1.jpeg",
-  },
-  {
-    eye: "Architektura",
-    title: "Ponadczasowe szarości",
-    body: "Szary kolor elewacji i dachu w zestawieniu z białą fasadą. Jasne barwy odbijają światło i dodają elegancji całemu osiedlu.",
-    img: "/assets/facade-grey.jpeg",
-  },
-  {
-    eye: "Przestrzeń",
-    title: "Każdy m² na wagę złota",
-    body: "Zero zmarnowanej przestrzeni. 122 m² domu i 590 m² działki na Twoją rodzinę.",
-    img: "/assets/interior-1.jpeg",
-  },
-];
 
 export default function About() {
-  const [hovered, setHovered] = useState<number | null>(null);
-
   return (
     <section
       id="about"
-      className="about-section"
-      style={{ padding: "160px 48px", background: "var(--surface-canvas)" }}
+      className="about-stats-section"
+      style={{ background: "var(--surface-canvas)" }}
     >
+      <style>{`
+        .about-stats-section {
+          padding: 160px 48px;
+        }
+        .about-stats-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 14px;
+        }
+        .about-stats-wide {
+          grid-column: span 2;
+        }
+        @media (max-width: 900px) {
+          .about-stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .about-stats-wide {
+            grid-column: span 2;
+          }
+        }
+        @media (max-width: 540px) {
+          .about-stats-section {
+            padding: 80px 20px;
+          }
+          .about-stats-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+          }
+          .about-stats-wide {
+            grid-column: span 2;
+          }
+        }
+      `}</style>
+
       <div style={{ maxWidth: 1440, margin: "0 auto" }}>
-        <div className="about-grid">
-          {pillars.map((p, i) => (
-            <Reveal key={i} delay={i * 0.12}>
-              <article
-                onMouseEnter={() => setHovered(i)}
-                onMouseLeave={() => setHovered(null)}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 20,
-                  transform: hovered === i ? "translateY(-8px)" : "translateY(0)",
-                  transition: "transform 0.35s ease",
-                }}
-              >
-                <RevealImage direction={i === 0 ? "left" : i === 1 ? "bottom" : "right"} delay={i * 0.1}>
-                  <div
-                    style={{
-                      aspectRatio: "4/5",
-                      borderRadius: "var(--radius-lg)",
-                      overflow: "hidden",
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        backgroundImage: `url(${p.img})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        transform: hovered === i ? "scale(1.06)" : "scale(1)",
-                        transition: "transform 0.5s ease",
-                      }}
-                    />
-                  </div>
-                </RevealImage>
-                <div
-                  style={{
-                    fontFamily: "var(--font-sans)",
-                    fontSize: 12,
-                    fontWeight: 500,
-                    letterSpacing: "0.14em",
-                    textTransform: "uppercase",
-                    color: "var(--brand-oak)",
-                  }}
-                >
-                  {p.eye}
-                </div>
-                <h3
-                  style={{
-                    fontFamily: "var(--font-serif)",
-                    fontSize: "clamp(1.8rem, 2.5vw, 2.4rem)",
-                    lineHeight: 1.1,
-                    letterSpacing: "-0.02em",
-                    fontWeight: 400,
-                    color: "var(--ink-primary)",
-                  }}
-                >
-                  {p.title}
-                </h3>
-                <p
-                  style={{
-                    fontFamily: "var(--font-sans)",
-                    fontSize: 16,
-                    lineHeight: 1.65,
-                    color: "var(--ink-secondary)",
-                    maxWidth: "36ch",
-                  }}
-                >
-                  {p.body}
-                </p>
-              </article>
+        <Reveal>
+          <div
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontSize: 12,
+              fontWeight: 500,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              color: "var(--brand-oak)",
+              marginBottom: 40,
+            }}
+          >
+            Najważniejsze informacje
+          </div>
+        </Reveal>
+
+        <div className="about-stats-grid">
+          {/* Row 1 — 4 equal cards */}
+          <Reveal delay={0}>
+            <StatCard value="121,87 m²" label="powierzchnia domu" />
+          </Reveal>
+          <Reveal delay={0.07}>
+            <StatCard value="ok. 450 m²" label="działka przy domu" />
+          </Reveal>
+          <Reveal delay={0.14}>
+            <StatCard value="4 domy" label="dostępne w Etapie 1" />
+          </Reveal>
+          <Reveal delay={0.21}>
+            <StatCard value="garaż" label="w bryle budynku" sub="w każdym domu" />
+          </Reveal>
+
+          {/* Row 2 — wide price card + 2 */}
+          <div className="about-stats-wide">
+            <Reveal delay={0.28}>
+              <StatCard
+                value="630 000 zł"
+                label="cena domu w Etapie 1"
+                sub="brutto"
+                fill
+              />
             </Reveal>
-          ))}
+          </div>
+          <Reveal delay={0.35}>
+            <StatCard
+              value="0 zł PCC"
+              label="oszczędność ok. 12 600 zł"
+              sub="względem zakupu z rynku wtórnego"
+              dark
+            />
+          </Reveal>
+          <Reveal delay={0.42}>
+            <StatCard value="marzec 2027" label="planowane zakończenie robót" />
+          </Reveal>
         </div>
       </div>
     </section>
+  );
+}
+
+function StatCard({
+  value,
+  label,
+  sub,
+  dark,
+  fill,
+}: {
+  value: string;
+  label: string;
+  sub?: string;
+  dark?: boolean;
+  fill?: boolean;
+}) {
+  return (
+    <div
+      style={{
+        background: dark ? "var(--surface-ink)" : "#FFFFFF",
+        border: dark ? "none" : "1px solid rgba(15,15,13,0.09)",
+        borderRadius: "var(--radius-lg)",
+        padding: fill ? "52px 48px" : "44px 40px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        gap: 14,
+        minHeight: 200,
+        height: "100%",
+        boxSizing: "border-box",
+      }}
+    >
+      <div
+        style={{
+          fontFamily: "var(--font-serif)",
+          fontSize: fill
+            ? "clamp(2.4rem, 3.5vw, 4rem)"
+            : "clamp(1.8rem, 2.4vw, 3rem)",
+          lineHeight: 1,
+          letterSpacing: "-0.025em",
+          fontWeight: 400,
+          color: dark ? "#FFFFFF" : "var(--ink-primary)",
+        }}
+      >
+        {value}
+      </div>
+      <div>
+        <div
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontSize: 14,
+            lineHeight: 1.5,
+            color: dark ? "rgba(255,255,255,0.55)" : "var(--ink-secondary)",
+          }}
+        >
+          {label}
+        </div>
+        {sub && (
+          <div
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontSize: 12,
+              marginTop: 4,
+              color: dark ? "rgba(255,255,255,0.35)" : "var(--brand-oak)",
+            }}
+          >
+            {sub}
+          </div>
+        )}
+      </div>
+    </div>
   );
 }

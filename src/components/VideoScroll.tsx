@@ -7,9 +7,21 @@ const FRAME_PATH = (n: number) =>
   `/assets/frames/frame_${String(n).padStart(4, "0")}.webp`;
 
 const captions = [
-  { tag: "Odkryj przestrzeń", text: "Każdy metr kwadratowy\nzaprojektowany z myślą o Tobie" },
-  { tag: "Nowoczesna architektura", text: "Ponadczasowe szarości\ni precyzja w każdym detalu" },
-  { tag: "Twoje miejsce", text: "Dom to więcej niż adres.\nTo początek historii." },
+  {
+    tag: "Filipek Investment",
+    text: "Dom to więcej niż adres.\nTo początek historii.",
+    type: "headline" as const,
+  },
+  {
+    tag: "Nasza filozofia",
+    text: "Wierzymy, że dom nie zaczyna się od metrażu, rzutu ani numeru działki. Zaczyna się od codzienności, którą można w nim zbudować: spokojnych poranków, rodzinnych spotkań, własnej przestrzeni i miejsca, do którego naprawdę chce się wracać.",
+    type: "body" as const,
+  },
+  {
+    tag: "Nowy Relax",
+    text: "Projektujemy coś więcej niż kolejny adres pod Białą Podlaską — dom, który ma dobrze działać na co dzień i stać się początkiem nowej historii.",
+    type: "body" as const,
+  },
 ];
 
 function drawCover(
@@ -166,6 +178,19 @@ export default function VideoScroll() {
           }}
         />
 
+        {/* Bottom gradient for text legibility */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: "52%",
+            background: "linear-gradient(to top, rgba(15,15,13,0.82) 0%, rgba(15,15,13,0.38) 50%, transparent 100%)",
+            pointerEvents: "none",
+          }}
+        />
+
 
 
         {/* Loading indicator */}
@@ -192,9 +217,9 @@ export default function VideoScroll() {
           style={{
             position: "absolute",
             bottom: "clamp(48px, 8vh, 80px)",
-            left: "clamp(20px, 5vw, 48px)",
-            right: "clamp(20px, 5vw, 48px)",
-            maxWidth: 560,
+            left: "clamp(20px, 5vw, 56px)",
+            right: "clamp(20px, 5vw, 56px)",
+            maxWidth: captions[capIdx].type === "headline" ? 520 : 620,
             transition: "opacity 0.5s ease",
             opacity: visible ? 1 : 0,
           }}
@@ -202,13 +227,12 @@ export default function VideoScroll() {
           <div
             style={{
               fontFamily: "var(--font-sans)",
-              fontSize: 12,
+              fontSize: 11,
               fontWeight: 500,
-              letterSpacing: "0.14em",
+              letterSpacing: "0.16em",
               textTransform: "uppercase",
-              color: "var(--brand-oak)",
-              marginBottom: 16,
-
+              color: "var(--brand-sand)",
+              marginBottom: captions[capIdx].type === "headline" ? 20 : 14,
             }}
           >
             {captions[capIdx].tag}
@@ -216,12 +240,13 @@ export default function VideoScroll() {
           <div
             style={{
               fontFamily: "var(--font-serif)",
-              fontSize: "clamp(1.4rem, 5vw, 2.8rem)",
+              fontSize: captions[capIdx].type === "headline"
+                ? "clamp(1.8rem, 5.5vw, 3.4rem)"
+                : "clamp(1rem, 1.9vw, 1.3rem)",
               fontWeight: 400,
-              color: "var(--brand-graphite)",
-              lineHeight: 1.15,
-              whiteSpace: "pre-line",
-
+              color: "#FAF7F2",
+              lineHeight: captions[capIdx].type === "headline" ? 1.15 : 1.7,
+              whiteSpace: captions[capIdx].type === "headline" ? "pre-line" : "normal",
             }}
           >
             {captions[capIdx].text}
@@ -250,7 +275,7 @@ export default function VideoScroll() {
                 background:
                   i === capIdx
                     ? "var(--brand-sand)"
-                    : "rgba(250,247,242,0.3)",
+                    : "rgba(250,247,242,0.45)",
                 transition: "all 0.3s",
                 alignSelf: "center",
               }}

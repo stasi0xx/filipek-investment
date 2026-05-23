@@ -140,6 +140,14 @@ export default function Hero() {
               "linear-gradient(to top, rgba(20,19,15,0.65) 0%, rgba(20,19,15,0.1) 45%, rgba(20,19,15,0.3) 100%)",
           }}
         />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(to right, rgba(20,19,15,0.72) 0%, rgba(20,19,15,0.45) 35%, rgba(20,19,15,0.08) 65%, transparent 100%)",
+          }}
+        />
 
         {!loaded && (
           <div
@@ -199,19 +207,37 @@ export default function Hero() {
               fontWeight: 400,
               color: "var(--ink-inverse)",
               opacity: 0.9,
-              maxWidth: "26ch",
+              maxWidth: "28ch",
               animation: "heroFadeUp 0.9s var(--ease-out-quart) 0.5s both",
             }}
           >
-            Dom to więcej niż adres.<br />To początek historii.
+            Dom pod Białą Podlaską, w którym<br />codzienność ma więcej oddechu.
+          </p>
+
+          <p
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontSize: "clamp(14px, 1.2vw, 17px)",
+              lineHeight: 1.65,
+              fontWeight: 400,
+              color: "var(--ink-inverse)",
+              opacity: 0.75,
+              maxWidth: "44ch",
+              animation: "heroFadeUp 0.9s var(--ease-out-quart) 0.62s both",
+            }}
+          >
+            Nowy Relax to kameralna inwestycja Filipek Investment w Ciciborze Dużym,
+            zaledwie ok. 1 km od granicy Białej Podlaskiej. Powstają tu nowoczesne domy
+            w zabudowie bliźniaczej — z własnym ogrodem, garażem w bryle budynku,
+            przemyślanym układem i spokojniejszym otoczeniem blisko miasta.
           </p>
 
           <div className="hero-buttons">
-            <Button as="a" href="#about" variant="primary-inverse">
-              Poznaj dom
+            <Button as="a" href="#kontakt" variant="primary-inverse">
+              Zapytaj o dostępność domu
             </Button>
-            <Button as="a" href="#etapy" variant="outline-inverse">
-              Zobacz dostępność
+            <Button as="a" href="#oferta" variant="outline-inverse">
+              Zobacz ofertę
             </Button>
           </div>
         </div>
