@@ -18,9 +18,52 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "Nowy Relax — Filipek Investment | Cicibór Duży",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://nowyrelax.pl"),
+  title: {
+    default: "Nowy Relax — domy w Ciciborze Dużym | Filipek Investment",
+    template: "%s | Nowy Relax",
+  },
   description:
-    "Nowoczesne domy w Ciciborze Dużym. 122 m², 3 sypialnie, działka 590 m². 1 km od Białej Podlaskiej, blisko węzła A2.",
+    "Kameralna inwestycja deweloperska w Ciciborze Dużym — 8 domów w zabudowie bliźniaczej, 1 km od Białej Podlaskiej. Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 630 000 zł brutto. Standard deweloperski+.",
+  keywords: [
+    "domy Biała Podlaska",
+    "Nowy Relax",
+    "Cicibór Duży",
+    "domy na sprzedaż lubelskie",
+    "dom z garażem",
+    "domy bliźniacze",
+    "Filipek Investment",
+    "inwestycja deweloperska Biała Podlaska",
+  ],
+  authors: [{ name: "Filipek Investment Sp. z o.o." }],
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "pl_PL",
+    siteName: "Nowy Relax — Filipek Investment",
+    title: "Nowy Relax — nowoczesne domy w Ciciborze Dużym",
+    description:
+      "8 domów w zabudowie bliźniaczej, 1 km od Białej Podlaskiej. Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 630 000 zł. Etap 1 w trakcie budowy.",
+    images: [
+      {
+        url: "/assets/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Nowy Relax — nowoczesne domy w zabudowie bliźniaczej w Ciciborze Dużym",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nowy Relax — domy w Ciciborze Dużym",
+    description:
+      "8 domów w zabudowie bliźniaczej, 1 km od Białej Podlaskiej. Dom 122 m², garaż, działka ok. 450 m². Cena 630 000 zł.",
+    images: ["/assets/og-image.png"],
+  },
+  icons: {
+    icon: "/assets/logo/filipek-mark.svg",
+    shortcut: "/assets/logo/filipek-mark.svg",
+  },
 };
 
 export default function RootLayout({
