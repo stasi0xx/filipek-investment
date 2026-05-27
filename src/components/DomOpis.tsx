@@ -7,17 +7,17 @@ const pillars = [
   {
     n: "01",
     title: "Parter",
-    body: "Przestronna część dzienna otwarta na ogród, praktyczna spiżarka i garaż bezpośrednio w bryle budynku — wszystko pod ręką bez zbędnych kroków.",
+    body: "Przestronna część dzienna otwarta na ogród, praktyczna spiżarka i garaż bezpośrednio w bryle budynku. Wszystko pod ręką bez zbędnych kroków.",
   },
   {
     n: "02",
     title: "Pierwsze piętro",
-    body: "Prywatna strefa sypialni oddzielona od dziennej — spokój i cisza wtedy, gdy tego potrzebujesz. Dodatkowa przestrzeń strychowa na rzeczy sezonowe.",
+    body: "Prywatna strefa sypialni oddzielona od dziennej. Spokój i cisza wtedy, gdy tego potrzebujesz. Dodatkowa przestrzeń strychowa na rzeczy sezonowe.",
   },
   {
     n: "03",
     title: "Na zewnątrz",
-    body: "Działka ok. 450 m² tylko do Twojej dyspozycji. Własny ogród, własne podwórko — bez wspólnych klatek i sąsiadów za ścianą.",
+    body: "Działka ok. 450 m² tylko do Twojej dyspozycji. Własny ogród, własne podwórko, bez wspólnych klatek i sąsiadów za ścianą.",
   },
 ];
 
@@ -43,12 +43,18 @@ export default function DomOpis() {
           border-bottom: 1px solid var(--line-dark);
           margin-bottom: 80px;
         }
+        .domopis-pillar-wrapper {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
         .domopis-pillar {
           background: var(--surface-ink);
           padding: 48px 40px;
           display: flex;
           flex-direction: column;
           gap: 20px;
+          flex: 1;
         }
         .domopis-footer {
           text-align: center;
@@ -124,8 +130,8 @@ export default function DomOpis() {
                 margin: 0,
               }}
             >
-              Nowy Relax obejmuje docelowo 8 domów w zabudowie bliźniaczej.
-              Etap 1 to 4 domy w dwóch budynkach bliźniaczych — każdy o
+              Nowy Relax obejmuje docelowo 8 domów.
+              Etap 1 to 4 domy, każdy o
               powierzchni 121,87 m² z garażem i własną działką.
             </p>
           </Reveal>
@@ -134,7 +140,7 @@ export default function DomOpis() {
         {/* 3 pillars */}
         <div className="domopis-pillars">
           {pillars.map((p, i) => (
-            <Reveal key={p.n} delay={i * 0.1}>
+            <Reveal key={p.n} delay={i * 0.1} className="domopis-pillar-wrapper">
               <div className="domopis-pillar">
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   <span
@@ -192,7 +198,7 @@ export default function DomOpis() {
               }}
             >
               To propozycja dla osób, które szukają czegoś więcej niż
-              mieszkania — własnego ogrodu, większej prywatności i spokojniejszego
+              mieszkania, własnego ogrodu, większej prywatności i spokojniejszego
               rytmu dnia, bez rezygnowania z bliskości miasta.
             </p>
           </Reveal>

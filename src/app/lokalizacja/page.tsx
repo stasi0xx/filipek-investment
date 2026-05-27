@@ -12,7 +12,7 @@ const advantages = [
   {
     n: "01",
     title: "ok. 1 km od granicy Białej Podlaskiej",
-    body: "Szybki dostęp do miejskiej infrastruktury — sklepów, szkół, przychodni i usług. Biała Podlaska z całym swoim zapleczem jest dosłownie za rogiem.",
+    body: "Szybki dostęp do miejskiej infrastruktury, sklepów, szkół, przychodni i usług. Biała Podlaska z całym swoim zapleczem jest dosłownie za rogiem.",
   },
   {
     n: "02",
@@ -27,7 +27,7 @@ const advantages = [
   {
     n: "04",
     title: "Własna działka przy domu",
-    body: "Ok. 450 m² gruntu wyłącznie do dyspozycji właściciela. Ogród, taras, podjazd — bez wspólnych przestrzeni i sąsiadów za ścianą.",
+    body: "Ok. 450 m² gruntu wyłącznie do dyspozycji właściciela. Ogród, taras, podjazd bez wspólnych przestrzeni i sąsiadów za ścianą.",
   },
 ];
 
@@ -157,7 +157,7 @@ export default function LokalizacjaPage() {
                   Nowy Relax powstaje w Ciciborze Dużym, zaledwie ok. 1 km od
                   granicy Białej Podlaskiej. Lokalizacja dla osób, które chcą
                   mieć szybki dostęp do miasta, ale na co dzień mieszkać
-                  spokojniej — z własnym ogrodem, garażem i większą przestrzenią.
+                  spokojniej z własnym ogrodem, garażem i większą przestrzenią.
                 </p>
               </Reveal>
               <Reveal delay={0.18}>
@@ -341,7 +341,7 @@ export default function LokalizacjaPage() {
                 >
                   To dobre rozwiązanie dla osób, które porównują zakup
                   mieszkania w mieście z możliwością zamieszkania w domu
-                  z działką i garażem — bez konieczności rezygnowania z
+                  z działką i garażem bez konieczności rezygnowania z
                   wygody codziennego dojazdu.
                 </p>
               </Reveal>
@@ -747,7 +747,7 @@ export default function LokalizacjaPage() {
 
             <Reveal delay={0.24}>
               <div className="lok-cta-actions">
-                <Button as="a" href="/#kontakt" variant="primary-inverse" size="lg">
+                <Button as="a" href="/kontakt" variant="primary-inverse" size="lg">
                   Umów prezentację inwestycji
                 </Button>
                 <Button as="a" href="/oferta" variant="outline-inverse" size="lg">

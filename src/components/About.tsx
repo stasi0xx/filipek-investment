@@ -79,7 +79,7 @@ export default function About() {
           <div className="about-stats-wide">
             <Reveal delay={0.28}>
               <StatCard
-                value="630 000 zł"
+                value="650 000 zł"
                 label="cena domu w Etapie 1"
                 sub="brutto"
                 fill
@@ -89,13 +89,13 @@ export default function About() {
           <Reveal delay={0.35}>
             <StatCard
               value="0 zł PCC"
-              label="oszczędność ok. 12 600 zł"
+              label="oszczędność ok. 13 000 zł"
               sub="względem zakupu z rynku wtórnego"
               dark
             />
           </Reveal>
           <Reveal delay={0.42}>
-            <StatCard value="marzec 2027" label="planowane zakończenie robót" />
+            <StatCard value="czerwiec 2027" label="planowane zakończenie robót" />
           </Reveal>
         </div>
       </div>

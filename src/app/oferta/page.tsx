@@ -103,7 +103,7 @@ const processSteps = [
   {
     n: "05",
     title: "Realizacja i odbiór",
-    body: "Planowany termin zakończenia robót to marzec 2027.",
+    body: "Planowany termin zakończenia robót to czerwiec 2027.",
   },
 ];
 
@@ -312,8 +312,8 @@ export default function OfertaPage() {
                     margin: "0 0 44px",
                   }}
                 >
-                  Nowy Relax to kameralna inwestycja — 8 domów w zabudowie
-                  bliźniaczej w Ciciborze Dużym. Etap 1 obejmuje 4 domy,
+                  Nowy Relax to kameralna inwestycja, 8 domów
+                  w Ciciborze Dużym. Etap 1 obejmuje 4 domy,
                   każdy z garażem w bryle budynku, własnym ogrodem i przemyślanym
                   układem dla rodziny.
                 </p>
@@ -426,7 +426,7 @@ export default function OfertaPage() {
                     marginBottom: 6,
                   }}
                 >
-                  630 000 zł
+                  650 000 zł
                 </div>
                 <div
                   style={{
@@ -444,7 +444,7 @@ export default function OfertaPage() {
                       ["121,87 m²", "powierzchni domu"],
                       ["ok. 450 m²", "działka przy domu"],
                       ["garaż", "w bryle budynku"],
-                      ["0 zł PCC", "oszczędność ok. 12 600 zł"],
+                      ["0 zł PCC", "oszczędność ok. 13 000 zł"],
                     ] as [string, string][]
                   ).map(([val, lab]) => (
                     <div
@@ -549,12 +549,12 @@ export default function OfertaPage() {
                 <ParamCard
                   value="0 zł PCC"
                   label="podatku do zapłaty"
-                  sub="oszczędność ok. 12 600 zł"
+                  sub="oszczędność ok. 13 000 zł"
                   dark
                 />
               </Reveal>
               <Reveal delay={0.36}>
-                <ParamCard value="marzec 2027" label="planowane zakończenie robót" />
+                <ParamCard value="czerwiec 2027" label="planowane zakończenie robót" />
               </Reveal>
             </div>
           </div>
@@ -635,7 +635,7 @@ export default function OfertaPage() {
                     margin: "0 0 20px",
                   }}
                 >
-                  W Etapie 1 dostępne są 4 domy w zabudowie bliźniaczej, każdy
+                  W Etapie 1 dostępne są 4 domy, każdy
                   o powierzchni 121,87 m², z garażem w bryle budynku oraz działką
                   ok. 450 m². Każdy dom ma ten sam, funkcjonalny układ: część dzienną
                   na parterze oraz prywatną strefę sypialni na 1. piętrze.
@@ -652,7 +652,7 @@ export default function OfertaPage() {
                   }}
                 >
                   W zależności od położenia w budynku układ domu występuje
-                  w odbiciu lustrzanym. Dodatkowym atutem jest przestrzeń strychowa —
+                  w odbiciu lustrzanym. Dodatkowym atutem jest przestrzeń strychowa,
                   praktyczne miejsce na rzeczy sezonowe, walizki czy sprzęt sportowy.
                 </p>
               </Reveal>
@@ -668,8 +668,8 @@ export default function OfertaPage() {
                     margin: "32px 0 0",
                   }}
                 >
-                  Formalnie przedmiotem sprzedaży jest lokal mieszkalny w zabudowie
-                  bliźniaczej wraz z przynależną działką.
+                  Formalnie przedmiotem sprzedaży jest lokal mieszkalny
+                  wraz z przynależną działką.
                 </p>
               </Reveal>
             </div>
@@ -808,21 +808,19 @@ export default function OfertaPage() {
               <div>
                 <div className="uklad-tabs">
                   <button
-                    className={`uklad-tab ${
-                      activeFloor === "parter"
-                        ? "uklad-tab-active"
-                        : "uklad-tab-inactive"
-                    }`}
+                    className={`uklad-tab ${activeFloor === "parter"
+                      ? "uklad-tab-active"
+                      : "uklad-tab-inactive"
+                      }`}
                     onClick={() => setActiveFloor("parter")}
                   >
                     Parter
                   </button>
                   <button
-                    className={`uklad-tab ${
-                      activeFloor === "pietro"
-                        ? "uklad-tab-active"
-                        : "uklad-tab-inactive"
-                    }`}
+                    className={`uklad-tab ${activeFloor === "pietro"
+                      ? "uklad-tab-active"
+                      : "uklad-tab-inactive"
+                      }`}
                     onClick={() => setActiveFloor("pietro")}
                   >
                     1. piętro
@@ -1146,7 +1144,7 @@ export default function OfertaPage() {
                       margin: "0 0 8px",
                     }}
                   >
-                    630 000 zł
+                    650 000 zł
                   </div>
                 </Reveal>
                 <Reveal delay={0.1}>
@@ -1229,12 +1227,12 @@ export default function OfertaPage() {
                       margin: 0,
                     }}
                   >
-                    Kupujący nie płaci podatku PCC — zakup odbywa się od
-                    dewelopera. Przy cenie 630 000 zł to oszczędność{" "}
+                    Kupujący nie płaci podatku PCC, zakup odbywa się od
+                    dewelopera. Przy cenie 650 000 zł to oszczędność{" "}
                     <strong
                       style={{ color: "var(--brand-sand)", fontWeight: 600 }}
                     >
-                      ok. 12 600 zł
+                      ok. 13 000 zł
                     </strong>{" "}
                     względem zakupu z rynku wtórnego.
                   </p>

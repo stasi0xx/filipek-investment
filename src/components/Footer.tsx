@@ -1,12 +1,12 @@
 "use client";
 
 const navLinks = [
-  "Strona główna",
-  "Oferta",
-  "Lokalizacja",
-  "Galeria",
-  "O inwestorze",
-  "Kontakt",
+  { href: "/", label: "Strona główna" },
+  { href: "/oferta", label: "Oferta" },
+  { href: "/lokalizacja", label: "Lokalizacja" },
+  { href: "/galeria", label: "Galeria" },
+  { href: "/inwestor", label: "O inwestorze" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 export default function Footer() {
@@ -113,8 +113,8 @@ export default function Footer() {
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {navLinks.map((l) => (
               <a
-                key={l}
-                href="#"
+                key={l.href}
+                href={l.href}
                 style={{
                   fontFamily: "var(--font-sans)",
                   fontSize: 14,
@@ -129,7 +129,7 @@ export default function Footer() {
                   ((e.currentTarget as HTMLElement).style.color = "var(--ink-inverse)")
                 }
               >
-                {l}
+                {l.label}
               </a>
             ))}
           </div>

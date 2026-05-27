@@ -13,7 +13,7 @@ const reasons = [
     n: "02",
     img: "/assets/floor-plans.jpg",
     title: "Przemyślany układ domu",
-    body: "Na parterze: salon z jadalnią, kuchnia, łazienka, spiżarka, przedsionek i garaż. Na piętrze: trzy pokoje, dwie łazienki i garderoba przy głównej sypialni — prywatna strefa oddzielona od dziennej.",
+    body: "Na parterze: salon z jadalnią, kuchnia, łazienka, spiżarka, przedsionek i garaż. Na piętrze: trzy pokoje, dwie łazienki i garderoba przy głównej sypialni, prywatna strefa oddzielona od dziennej.",
   },
   {
     n: "03",
@@ -25,7 +25,7 @@ const reasons = [
     n: "04",
     img: "/assets/render-ciemny-front-prawy-zloty.jpeg",
     title: "Mniej kosztów na starcie",
-    body: "Kupując dom od dewelopera, nie płacisz podatku PCC. Przy cenie 630 000 zł oznacza to oszczędność ok. 12 600 zł w porównaniu z zakupem nieruchomości z rynku wtórnego.",
+    body: "Kupując dom od dewelopera, nie płacisz podatku PCC. Przy cenie 650 000 zł oznacza to oszczędność ok. 13 000 zł w porównaniu z zakupem nieruchomości z rynku wtórnego.",
   },
 ];
 
@@ -140,7 +140,7 @@ export default function DlaczegoNowyRelax() {
                 margin: 0,
               }}
             >
-              Nowy Relax to nie tylko adres — to przemyślana odpowiedź na
+              Nowy Relax to nie tylko adres, to przemyślana odpowiedź na
               potrzeby osób, które cenią spokój, komfort i niezależność,
               bez rezygnowania z bliskości miasta.
             </p>

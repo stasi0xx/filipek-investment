@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Galeria — wizualizacje i rzuty domu",
   description:
-    "Galeria inwestycji Nowy Relax: wizualizacje zewnętrzne, rzuty kondygnacji i zagospodarowanie terenu. Domy w zabudowie bliźniaczej w Ciciborze Dużym.",
+    "Galeria inwestycji Nowy Relax: wizualizacje zewnętrzne, rzuty kondygnacji i zagospodarowanie terenu. Domy w Ciciborze Dużym.",
   openGraph: {
     title: "Galeria — Nowy Relax | Wizualizacje i rzuty domu",
     description:

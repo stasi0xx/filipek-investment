@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oferta — dom 122 m², garaż, działka 450 m², 630 000 zł",
+  title: "Oferta — dom 122 m², garaż, działka 450 m², 650 000 zł",
   description:
-    "Szczegóły oferty Nowy Relax: dom 122 m² w zabudowie bliźniaczej z garażem w bryle budynku i działką ok. 450 m². Cena 630 000 zł brutto, 0 zł PCC. Standard deweloperski+. Cicibór Duży, 1 km od Białej Podlaskiej.",
+    "Szczegóły oferty Nowy Relax: dom 122 m² z garażem w bryle budynku i działką ok. 450 m². Cena 650 000 zł brutto, 0 zł PCC. Standard deweloperski+. Cicibór Duży, 1 km od Białej Podlaskiej.",
   openGraph: {
-    title: "Oferta — Nowy Relax | Dom 122 m², garaż, 630 000 zł",
+    title: "Oferta — Nowy Relax | Dom 122 m², garaż, 650 000 zł",
     description:
-      "Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 630 000 zł brutto, bez podatku PCC. Standard deweloperski+ z pompą ciepła i rekuperacją.",
+      "Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 650 000 zł brutto, bez podatku PCC. Standard deweloperski+ z pompą ciepła i rekuperacją.",
     images: [
       {
         url: "/assets/og-image.png",

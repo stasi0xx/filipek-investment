@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     template: "%s | Nowy Relax",
   },
   description:
-    "Kameralna inwestycja deweloperska w Ciciborze Dużym — 8 domów w zabudowie bliźniaczej, 1 km od Białej Podlaskiej. Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 630 000 zł brutto. Standard deweloperski+.",
+    "Kameralna inwestycja deweloperska w Ciciborze Dużym — 8 nowoczesnych domów, 1 km od Białej Podlaskiej. Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 650 000 zł brutto. Standard deweloperski+.",
   keywords: [
     "domy Biała Podlaska",
     "Nowy Relax",
     "Cicibór Duży",
     "domy na sprzedaż lubelskie",
     "dom z garażem",
-    "domy bliźniacze",
+    "nowe domy",
     "Filipek Investment",
     "inwestycja deweloperska Biała Podlaska",
   ],
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
     siteName: "Nowy Relax — Filipek Investment",
     title: "Nowy Relax — nowoczesne domy w Ciciborze Dużym",
     description:
-      "8 domów w zabudowie bliźniaczej, 1 km od Białej Podlaskiej. Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 630 000 zł. Etap 1 w trakcie budowy.",
+      "8 nowoczesnych domów, 1 km od Białej Podlaskiej. Dom 122 m², garaż w bryle budynku, działka ok. 450 m². Cena 650 000 zł. Etap 1 w trakcie budowy.",
     images: [
       {
         url: "/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Nowy Relax — nowoczesne domy w zabudowie bliźniaczej w Ciciborze Dużym",
+        alt: "Nowy Relax — nowoczesne domy w Ciciborze Dużym",
       },
     ],
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nowy Relax — domy w Ciciborze Dużym",
     description:
-      "8 domów w zabudowie bliźniaczej, 1 km od Białej Podlaskiej. Dom 122 m², garaż, działka ok. 450 m². Cena 630 000 zł.",
+      "8 nowoczesnych domów, 1 km od Białej Podlaskiej. Dom 122 m², garaż, działka ok. 450 m². Cena 650 000 zł.",
     images: ["/assets/og-image.png"],
   },
   icons: {

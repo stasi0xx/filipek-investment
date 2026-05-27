@@ -133,7 +133,7 @@ export default function PoznajInwestora() {
               >
                 Filipek Investment Sp. z&nbsp;o.o.
               </strong>{" "}
-              — lokalny inwestor mieszkaniowy realizujący kameralne inwestycje
+              , lokalny inwestor mieszkaniowy realizujący kameralne inwestycje
               domów i&nbsp;lokali w zabudowie jednorodzinnej.
             </p>
           </Reveal>

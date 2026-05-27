@@ -17,7 +17,7 @@ const pillars = [
   {
     n: "02",
     title: "Dobrze zaplanowana kuchnia",
-    body: "Układ kuchni przemyślany pod kątem codziennego użytkowania — z miejscem na sprzęt, spiżarnią i wygodnym dostępem do jadalni.",
+    body: "Układ kuchni przemyślany pod kątem codziennego użytkowania, z miejscem na sprzęt, spiżarnią i wygodnym dostępem do jadalni.",
   },
   {
     n: "03",
@@ -27,7 +27,7 @@ const pillars = [
   {
     n: "04",
     title: "Czytelny podział stref",
-    body: "Wyraźna granica między strefą dzienną a prywatną — więcej prywatności i komfortu dla całej rodziny.",
+    body: "Wyraźna granica między strefą dzienną a prywatną, co zapewnia większą prywatność i komfort dla całej rodziny.",
   },
 ];
 
@@ -542,7 +542,7 @@ export default function InwestorPage() {
                 }}
               >
                 W naszych projektach zwracamy uwagę na praktyczne rozwiązania
-                — widoczne m.in. w funkcjonalnym układzie Nowego Relaxu,
+                widoczne m.in. w funkcjonalnym układzie Nowego Relaxu,
                 standardzie deweloperskim+ i kameralnym charakterze inwestycji.
               </p>
             </Reveal>
@@ -712,7 +712,7 @@ export default function InwestorPage() {
                     maxWidth: "46ch",
                   }}
                 >
-                  Jedna z wcześniejszych realizacji Filipek Investment — projekt,
+                  Jedna z wcześniejszych realizacji Filipek Investment to projekt,
                   który pokazuje nasze podejście do kameralnej zabudowy
                   mieszkaniowej.
                 </p>
@@ -860,7 +860,7 @@ export default function InwestorPage() {
                 }}
               >
                 Jeśli chcesz poznać szczegóły inwestycji, dostępność domów,
-                standard lub proces rezerwacji — skontaktuj się z nami.
+                standard lub proces rezerwacji skontaktuj się z nami.
               </p>
             </Reveal>
 

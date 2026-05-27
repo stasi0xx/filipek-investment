@@ -10,28 +10,28 @@ const steps = [
     quarter: null,
   },
   {
-    status: "done",
-    label: "Prace fundamentowe",
-    note: "Zakończone",
-    quarter: null,
-  },
-  {
     status: "active",
-    label: "Stan surowy otwarty",
+    label: "Przygotowanie terenu i rozpoczęcie prac",
     note: "W trakcie",
     quarter: "Q2 2026",
   },
   {
     status: "pending",
-    label: "Stan deweloperski+",
+    label: "Stan surowy otwarty",
     note: null,
     quarter: "Q3 2026",
   },
   {
     status: "pending",
-    label: "Odbiory i przekazanie",
+    label: "Stan surowy zamknięty i instalacje",
     note: null,
     quarter: "Q4 2026",
+  },
+  {
+    status: "pending",
+    label: "Standard deweloperski+ i przekazanie domów",
+    note: null,
+    quarter: "Q2 2027",
   },
 ];
 
@@ -222,7 +222,7 @@ export default function BuildingTimeline() {
                 margin: 0,
               }}
             >
-              Harmonogram realizacji
+              Harmonogram realizacji (Etap 1)
             </h2>
           </Reveal>
         </div>

@@ -217,7 +217,7 @@ export default function GaleriaPage() {
                   maxWidth: "26ch",
                 }}
               >
-                Nowoczesna, spokojna architektura domów w zabudowie bliźniaczej.
+                Nowoczesna, spokojna architektura domów.
               </h2>
             </Reveal>
           </div>
@@ -351,7 +351,7 @@ export default function GaleriaPage() {
                     maxWidth: "44ch",
                   }}
                 >
-                  Parter to otwarta strefa dzienna — salon z jadalnią, kuchnia,
+                  Parter to otwarta strefa dzienna: salon z jadalnią, kuchnia,
                   łazienka, spiżarnia, przedsionek i garaż w bryle budynku.
                 </p>
               </Reveal>
@@ -366,7 +366,7 @@ export default function GaleriaPage() {
                     maxWidth: "44ch",
                   }}
                 >
-                  Piętro to prywatna strefa nocna — trzy sypialnie, dwie łazienki
+                  Piętro to prywatna strefa nocna: trzy sypialnie, dwie łazienki
                   i garderoba przy głównej sypialni.
                 </p>
               </Reveal>
@@ -513,8 +513,8 @@ export default function GaleriaPage() {
                     maxWidth: "42ch",
                   }}
                 >
-                  8 domów w zabudowie bliźniaczej, każdy z własną działką ok. 450 m²,
-                  podjazdem, tarasem i ogrodzeniem panelowym. Osiedle jest kameralne —
+                  8 nowoczesnych domów, każdy z własną działką ok. 450 m²,
+                  podjazdem, tarasem i ogrodzeniem panelowym. Osiedle jest kameralne,
                   bez przelotowych ulic, z zielenią wokół każdego domu.
                 </p>
               </Reveal>

@@ -228,8 +228,8 @@ export default function Hero() {
           >
             Nowy Relax to kameralna inwestycja Filipek Investment w Ciciborze Dużym,
             zaledwie ok. 1 km od granicy Białej Podlaskiej. Powstają tu nowoczesne domy
-            w zabudowie bliźniaczej — z własnym ogrodem, garażem w bryle budynku,
-            przemyślanym układem i spokojniejszym otoczeniem blisko miasta.
+            z własnym ogrodem, garażem w bryle budynku, przemyślanym układem
+            i spokojniejszym otoczeniem blisko miasta.
           </p>
 
           <div className="hero-buttons">
