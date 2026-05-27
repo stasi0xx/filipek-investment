@@ -901,7 +901,10 @@ export default function OfertaPage() {
               {/* Right: floor plan */}
               <Reveal delay={0.1}>
                 <div className="uklad-floorplan">
-                  <img src="/assets/floor-plans.jpg" alt="Rzut kondygnacji" />
+                  <img
+                    src={activeFloor === "parter" ? "/assets/parter.png" : "/assets/pietro1.png"}
+                    alt="Rzut kondygnacji"
+                  />
                 </div>
               </Reveal>
             </div>
