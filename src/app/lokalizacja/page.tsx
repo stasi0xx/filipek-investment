@@ -162,7 +162,7 @@ export default function LokalizacjaPage() {
               </Reveal>
               <Reveal delay={0.18}>
                 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                  <Button as="a" href="/#kontakt" variant="primary-inverse" size="lg">
+                  <Button as="a" href="/kontakt" variant="primary-inverse" size="lg">
                     Umów prezentację inwestycji
                   </Button>
                   <Button as="a" href="#mapa" variant="outline-inverse" size="lg">
@@ -346,7 +346,7 @@ export default function LokalizacjaPage() {
                 </p>
               </Reveal>
               <Reveal delay={0.18}>
-                <Button as="a" href="/#kontakt" variant="primary" size="lg">
+                <Button as="a" href="/kontakt" variant="primary" size="lg">
                   Umów prezentację inwestycji
                 </Button>
               </Reveal>

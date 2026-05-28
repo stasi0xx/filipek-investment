@@ -31,6 +31,8 @@ function ContactForm() {
     consent: false,
   });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [focused, setFocused] = useState<string | null>(null);
 
   const field = (name: string): React.CSSProperties => ({
@@ -116,9 +118,32 @@ function ContactForm() {
 
   return (
     <form
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        setSent(true);
+        if (!form.consent) {
+          setError("Proszę wyrazić zgodę na kontakt.");
+          return;
+        }
+        setLoading(true);
+        setError(null);
+        try {
+          const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: form.name,
+              phone: form.phone,
+              email: form.email,
+              message: form.message,
+            }),
+          });
+          if (!res.ok) throw new Error();
+          setSent(true);
+        } catch {
+          setError("Nie udało się wysłać wiadomości. Spróbuj ponownie lub napisz bezpośrednio na nowyrelax@fi-invest.pl.");
+        } finally {
+          setLoading(false);
+        }
       }}
       style={{ display: "flex", flexDirection: "column", gap: 20 }}
     >
@@ -186,12 +211,23 @@ function ContactForm() {
       </label>
 
       {/* Consent */}
-      <label
+      <div
+        role="checkbox"
+        aria-checked={form.consent}
+        tabIndex={0}
+        onClick={() => setForm({ ...form, consent: !form.consent })}
+        onKeyDown={(e) => {
+          if (e.key === " " || e.key === "Enter") {
+            e.preventDefault();
+            setForm({ ...form, consent: !form.consent });
+          }
+        }}
         style={{
           display: "flex",
           alignItems: "flex-start",
           gap: 12,
           cursor: "pointer",
+          userSelect: "none",
         }}
       >
         <div
@@ -207,17 +243,11 @@ function ContactForm() {
             alignItems: "center",
             justifyContent: "center",
             transition: "border-color 180ms, background 180ms",
-            cursor: "pointer",
+            flexShrink: 0,
           }}
-          onClick={() => setForm({ ...form, consent: !form.consent })}
         >
           {form.consent && (
-            <svg
-              width="10"
-              height="8"
-              viewBox="0 0 10 8"
-              fill="none"
-            >
+            <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
               <path
                 d="M1 4L3.8 7L9 1"
                 stroke="#FAF7F2"
@@ -228,13 +258,6 @@ function ContactForm() {
             </svg>
           )}
         </div>
-        <input
-          type="checkbox"
-          required
-          checked={form.consent}
-          onChange={(e) => setForm({ ...form, consent: e.target.checked })}
-          style={{ display: "none" }}
-        />
         <span
           style={{
             fontFamily: "var(--font-sans)",
@@ -246,13 +269,31 @@ function ContactForm() {
           Wyrażam zgodę na kontakt w celu obsługi zapytania dotyczącego
           inwestycji Nowy Relax.
         </span>
-      </label>
+      </div>
+
+      {error && (
+        <div
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontSize: 13,
+            lineHeight: 1.6,
+            color: "#B94040",
+            background: "#FFF5F5",
+            border: "1px solid #F5C6C6",
+            borderRadius: "var(--radius-md)",
+            padding: "12px 16px",
+          }}
+        >
+          {error}
+        </div>
+      )}
 
       <button
         type="submit"
+        disabled={loading}
         style={{
           marginTop: 4,
-          background: "var(--surface-ink)",
+          background: loading ? "rgba(20,19,15,0.5)" : "var(--surface-ink)",
           color: "var(--ink-inverse)",
           border: "none",
           padding: "18px 36px",
@@ -260,19 +301,19 @@ function ContactForm() {
           fontFamily: "var(--font-sans)",
           fontSize: 15,
           fontWeight: 500,
-          cursor: "pointer",
+          cursor: loading ? "not-allowed" : "pointer",
           width: "100%",
           letterSpacing: "0.01em",
-          transition: "opacity 180ms, transform 120ms",
+          transition: "opacity 180ms, background 180ms",
         }}
         onMouseEnter={(e) => {
-          (e.currentTarget as HTMLElement).style.opacity = "0.88";
+          if (!loading) (e.currentTarget as HTMLElement).style.opacity = "0.88";
         }}
         onMouseLeave={(e) => {
           (e.currentTarget as HTMLElement).style.opacity = "1";
         }}
       >
-        Wyślij zapytanie
+        {loading ? "Wysyłanie…" : "Wyślij zapytanie"}
       </button>
     </form>
   );

@@ -7,6 +7,7 @@ import Cursor from "@/components/Cursor";
 import Reveal from "@/components/Reveal";
 import RevealImage from "@/components/RevealImage";
 import Button from "@/components/Button";
+import Lens from "@/components/Lens";
 
 const imgStyle = (src: string, hovered: boolean): React.CSSProperties => ({
   width: "100%",
@@ -24,8 +25,18 @@ const NAV_CHIPS = [
   { href: "#zagospodarowanie", label: "Zagospodarowanie terenu" },
 ];
 
+const FLOOR_PLAN_SLIDES = [
+  { src: "/assets/parter.png", alt: "Rzut parteru — Nowy Relax" },
+  { src: "/assets/parter2.webp", alt: "Wizualizacja parteru — styl ciemny" },
+  { src: "/assets/parter3.webp", alt: "Wizualizacja parteru — styl jasny" },
+  { src: "/assets/pietro1.png", alt: "Rzut 1. piętra — Nowy Relax" },
+];
+
 export default function GaleriaPage() {
   const [hovered, setHovered] = useState<string | null>(null);
+  const [activeSlide, setActiveSlide] = useState(0);
+  const prevSlide = () => setActiveSlide(i => (i - 1 + FLOOR_PLAN_SLIDES.length) % FLOOR_PLAN_SLIDES.length);
+  const nextSlide = () => setActiveSlide(i => (i + 1) % FLOOR_PLAN_SLIDES.length);
 
   return (
     <>
@@ -425,15 +436,74 @@ export default function GaleriaPage() {
               </Reveal>
 
               <Reveal delay={0.24}>
-                <Button as="a" href="/#kontakt" variant="outline" size="md">
+                <Button as="a" href="/kontakt" variant="outline" size="md">
                   Poproś o szczegółową kartę domu →
                 </Button>
               </Reveal>
             </div>
 
             <Reveal delay={0.1}>
-              <div className="rzuty-wrap">
-                <img src="/assets/floor-plans.jpg" alt="Rzut kondygnacji — Nowy Relax" />
+              <style>{`
+                .rzuty-carousel { position: relative; }
+                .rzuty-slides { position: relative; overflow: hidden; border-radius: var(--radius-xl); background: var(--surface-canvas); }
+                .rzuty-slide {
+                  position: absolute; inset: 0;
+                  display: flex; align-items: center; justify-content: center;
+                  padding: 32px;
+                  opacity: 0; transition: opacity 0.45s ease;
+                  pointer-events: none;
+                }
+                .rzuty-slide.active { opacity: 1; position: relative; pointer-events: auto; }
+                .rzuty-slide img { width: 100%; height: 100%; object-fit: contain; display: block; max-height: 520px; }
+                .rzuty-nav {
+                  display: flex; align-items: center; justify-content: space-between;
+                  margin-top: 20px;
+                }
+                .rzuty-arrow {
+                  width: 44px; height: 44px; border-radius: 50%;
+                  border: 1px solid var(--line-hair);
+                  background: var(--surface-canvas);
+                  display: flex; align-items: center; justify-content: center;
+                  cursor: pointer; transition: background 200ms, border-color 200ms;
+                  color: var(--ink-secondary);
+                  flex-shrink: 0;
+                }
+                .rzuty-arrow:hover { background: var(--surface-warm); border-color: var(--brand-oak); color: var(--ink-primary); }
+                .rzuty-dots { display: flex; gap: 8px; align-items: center; }
+                .rzuty-dot {
+                  width: 7px; height: 7px; border-radius: 50%;
+                  background: var(--line-hair); border: none; padding: 0; cursor: pointer;
+                  transition: background 250ms, transform 250ms;
+                }
+                .rzuty-dot.active { background: var(--brand-oak); transform: scale(1.35); }
+              `}</style>
+              <div className="rzuty-carousel">
+                <Lens>
+                  <div className="rzuty-slides">
+                    {FLOOR_PLAN_SLIDES.map((slide, i) => (
+                      <div key={slide.src} className={`rzuty-slide${i === activeSlide ? " active" : ""}`}>
+                        <img src={slide.src} alt={slide.alt} />
+                      </div>
+                    ))}
+                  </div>
+                </Lens>
+                <div className="rzuty-nav">
+                  <button className="rzuty-arrow" onClick={prevSlide} aria-label="Poprzednie zdjęcie">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M11 13L7 9l4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                  <div className="rzuty-dots">
+                    {FLOOR_PLAN_SLIDES.map((_, i) => (
+                      <button key={i} className={`rzuty-dot${i === activeSlide ? " active" : ""}`} onClick={() => setActiveSlide(i)} aria-label={`Zdjęcie ${i + 1}`} />
+                    ))}
+                  </div>
+                  <button className="rzuty-arrow" onClick={nextSlide} aria-label="Następne zdjęcie">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M7 5l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </Reveal>
           </div>
@@ -652,7 +722,7 @@ export default function GaleriaPage() {
                     i szczegółami oferty. Wyślemy ją na wskazany adres e-mail.
                   </p>
                   <div>
-                    <Button as="a" href="/#kontakt" variant="primary-inverse" size="md">
+                    <Button as="a" href="/kontakt" variant="primary-inverse" size="md">
                       Poproś o kartę domu
                     </Button>
                   </div>
@@ -689,7 +759,7 @@ export default function GaleriaPage() {
                     dotyczące dostępności, standardu i harmonogramu realizacji.
                   </p>
                   <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                    <Button as="a" href="/#kontakt" variant="outline-inverse" size="md">
+                    <Button as="a" href="mailto:nowyrelaks@fi-invest.pl" variant="outline-inverse" size="md">
                       Zapytaj o dostępność
                     </Button>
                     <Button as="a" href="tel:+48692404796" variant="ghost" size="md">

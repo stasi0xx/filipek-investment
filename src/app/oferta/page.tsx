@@ -320,7 +320,7 @@ export default function OfertaPage() {
               </Reveal>
               <Reveal delay={0.18}>
                 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                  <Button as="a" href="/#kontakt" variant="primary-inverse" size="lg">
+                  <Button as="a" href="/kontakt" variant="primary-inverse" size="lg">
                     Zapytaj o dostępność domu
                   </Button>
                   <Button as="a" href="#układ" variant="outline-inverse" size="lg">
@@ -1179,7 +1179,7 @@ export default function OfertaPage() {
                   </p>
                 </Reveal>
                 <Reveal delay={0.18}>
-                  <Button as="a" href="/#kontakt" variant="primary" size="lg">
+                  <Button as="a" href="/kontakt" variant="primary" size="lg">
                     Zapytaj o aktualną dostępność
                   </Button>
                 </Reveal>
@@ -1450,7 +1450,7 @@ export default function OfertaPage() {
                   <div>
                     <Button
                       as="a"
-                      href="/#kontakt"
+                      href="/kontakt"
                       variant="outline-inverse"
                       size="md"
                     >
@@ -1492,7 +1492,7 @@ export default function OfertaPage() {
                   <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                     <Button
                       as="a"
-                      href="/#kontakt"
+                      href="/kontakt"
                       variant="primary-inverse"
                       size="md"
                     >
@@ -1500,7 +1500,7 @@ export default function OfertaPage() {
                     </Button>
                     <Button
                       as="a"
-                      href="/#kontakt"
+                      href="/kontakt"
                       variant="ghost"
                       size="md"
                     >

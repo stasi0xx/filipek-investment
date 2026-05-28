@@ -161,7 +161,7 @@ export default function InwestorPage() {
 
               <Reveal delay={0.19}>
                 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                  <Button as="a" href="#kontakt" variant="primary-inverse" size="lg">
+                  <Button as="a" href="/kontakt" variant="primary-inverse" size="lg">
                     Zapytaj o dostępność domu
                   </Button>
                   <Button as="a" href="#filozofia" variant="outline-inverse" size="lg">
@@ -866,10 +866,10 @@ export default function InwestorPage() {
 
             <Reveal delay={0.24}>
               <div className="inv-cta-actions">
-                <Button as="a" href="tel:+48000000000" variant="primary-inverse" size="lg">
+                <Button as="a" href="/kontakt" variant="primary-inverse" size="lg">
                   Zapytaj o dostępność domu
                 </Button>
-                <Button as="a" href="mailto:kontakt@filipek-investment.pl" variant="outline-inverse" size="lg">
+                <Button as="a" href="mailto:nowyrelaks@fi-invest.pl" variant="outline-inverse" size="lg">
                   Napisz do nas
                 </Button>
               </div>
